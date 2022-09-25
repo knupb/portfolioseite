@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Allerta Stencil');/* Font import*/
+
+body{
+    font-family: 'Allerta Stencil', Verdana, Geneva, Tahoma, sans-serif;/*font in ' einfügen*/
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#navbar ul{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    list-style-type: none;
+    color: white;
+}
+#navbar a{
+    text-decoration: none;
+    color:white
+}
