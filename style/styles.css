@@ -2,59 +2,284 @@
 
 body{
     font-family: 'Allerta Stencil', Verdana, Geneva, Tahoma, sans-serif;/*font in ' einfügen*/
-    background-color: black;
-    text-align: center;
-    color: white;
-
 }
-#homebackground {
-    background-image: url('/style/images/brain.png');/*https: //svgsilh.com/ms/8bc34a/image/2729794.html Animation own work*/
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 600px;
-    height: 600px;
-    animation-name: home;
-    animation-duration: 1s;
-    animation-iteration-count: infinite
-    
-}
-@keyframes home{
-0%,
-    100% {
-        background-size: 100% auto;
-        -webkit-background-size: 100%;
-    }
-
-    50% {
-        background-size: 95% auto;
-        -webkit-background-size: 95%;
-    }
-}
-
-#navbar ul{
+.containernav {
+    height: 100%;
+    width: 0;
     position: fixed;
-    bottom: 0;
-    left: 0;
-    list-style-type: none;
-    background-color: #8BC34A;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
-#navbar a{
+
+.containernav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    color:black;
+    font-size: 15px;
+    color: rgb(255, 241, 47);
+    display: block;
+    transition: 0.3s;
+}
+
+.containernav a:hover {
+    color: rgb(255, 248, 47);
+}
+
+.containernav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 40px;
+    margin-right: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    right: 0;
+    position:fixed;
+}
+
+.containernav ul{
+    list-style: none;
+}
+
+.containernav a{
+    text-decoration: none;
+    color:rgb(10, 10, 10);
     display: block;
     padding: 16px 14px;
 }
-#navbar li {
-    float: left;   
+
+.containernav ul li a{
+    list-style: none;
+    margin: 5%;
+
 }
-#navbar li a:hover{
-    background-color: black;
-    color: white;
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    text-align: center;
+    background-color: #111;
 }
-#navbar li a.active{
-    background-color: black;
-    color: white;
+.home{
+    background-image:url("images/stars.png");/*Quelle Nasahttps: //www.nasa.gov/feature/goddard/2018/hubble-paints-picture-of-the-evolving-universe/*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.typewrite{
+    overflow: hidden;
+    color: #c1c34a;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #c3b74a;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 9s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 30%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    10% {
+        border-color: #c3c14a;
+    }
+}
+.solar-system {
+    position: relative;
+    width: 780px;
+    height: 780px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Some positioning rules that are common for all objects */
+#sun,
+.orbit,
+.orbit+div,
+.orbit+div>div {
+    position: absolute;
+}
+
+#sun,
+.orbit,
+.orbit+div {
+    top: 50%;
+    left: 50%;
+}
+
+.orbit+div>div {
+    top: 0;
+    left: 50%;
+}
+
+.orbit,
+.orbit+div div,
+#earth {
+    border-radius: 50%;
+}
+
+/* Individual objects rules. They are pretty much the same for 
+all objects and basically only vary in orbit size 
+and planet size. And colors :) */
+
+#sun {
+    /* Positions the top-left corner of the image to be *
+	/* in the middle of the box */
+    height: 200px;
+    width: 200px;
+    background-color: #fae20a;
+    margin-top: -100px;
+    margin-left: -100px;
+    border-radius: 50%;
+    box-shadow: 0 0 84px orange;
+}
+
+#earth {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    margin-left: -25px;
+    margin-top: -25px;
+    border-radius: 50%;
+    box-shadow: 0 0 34px #3a4385;
+}
+
+.earth-orbit,
+.earth-spin {
+    width: 500px;
+    height: 500px;
+    margin-left: -250px;
+    margin-top: -250px;
+}
+
+#moon {
+    margin-top: -6px;
+    margin-left: -6px;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 14px #3a4385;
+}
+
+.moon-orbit,
+.moon-spin {
+    height: 90px;
+    width: 90px;
+    margin-top: -45px;
+    margin-left: -45px;
+    border-color: #447;
+}
+
+#venus {
+    margin-top: -20px;
+    margin-left: -20px;
+    height: 40px;
+    width: 40px;
+    background-color: #3498db;
+    box-shadow: 0 0 34px #3a4385;
+}
+
+.venus-orbit,
+.venus-spin {
+    margin-top: -185px;
+    margin-left: -185px;
+    width: 370px;
+    height: 370px;
+}
+
+#mercury {
+    margin-top: -13.5px;
+    margin-left: -13.5px;
+    height: 25px;
+    width: 25px;
+    background-color: #a65e22;
+    /* box-shadow: 0 0 34px #3a4385; */
+}
+
+.mercury-orbit,
+.mercury-spin {
+    width: 280px;
+    height: 280px;
+    margin-left: -140px;
+    margin-top: -140px;
+}
+
+#mars {
+    margin-top: -16px;
+    margin-left: -16px;
+    height: 32px;
+    width: 32px;
+    background-color: #863222;
+    box-shadow: 0 0 14px #a64232;
+}
+
+.mars-orbit,
+.mars-spin {
+    width: 700px;
+    height: 700px;
+    margin-left: -350px;
+    margin-top: -350px;
+}
+
+/* Spinning animations */
+
+@keyframes spin-right {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.earth-spin {
+    animation: spin-right 36.5s linear infinite;
+}
+
+.moon-spin {
+    animation: spin-right 3s linear infinite;
+}
+
+.venus-spin {
+    animation: spin-right 22s linear infinite;
+}
+
+.mercury-spin {
+    animation: spin-right 8.8s linear infinite;
+}
+
+.mars-spin {
+    animation: spin-right 68.7s linear infinite;
 }

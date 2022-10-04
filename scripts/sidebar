@@ -1,0 +1,11 @@
+function openNav() {
+  document.getElementById("openclose").style.width = "100px";
+  document.getElementById("main").style.marginRight = "100px";
+  document.getElementById("main").style.marginBottom = "100px";
+}
+
+function closeNav() {
+  document.getElementById("openclose").style.width = "0";
+  document.getElementById("main").style.marginRight = "0";
+  document.getElementById("main").style.marginBottom = "0";
+}

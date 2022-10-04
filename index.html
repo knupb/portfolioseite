@@ -7,42 +7,78 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style\styles.css">
     <script src="scripts\stickynav.js"></script>
+    <script src="scripts\sidebar"></script>
 </head>
-<body>
-    <header>        
-    </header>
-    <div id="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#profil">Profil</a></li>
-            <li><a href="#cv">CV (Lebenslauf)</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
-        </ul>
+<body>  
+    <div id="main">
+        <div id="openclose" class="containernav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#home">Home</a>
+            <a href="#profil">Profil</a>
+            <a href="#cv">CV</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#kontakt">Kontakt</a>
+        </div>
+        <div>
+            <button class="openbtn" onclick="openNav()">☰</button>
+        </div>
+        <div class="home">
+            <div class="solar-system"><!--source basic template:https://codepen.io/everdimension/pen/DwREaP  adaptions my own-->
+                <div id="sun"></div>
+            
+                <div class="orbit mercury-orbit"></div>
+                <div class="mercury-spin">
+                    <div id="mercury"></div>
+                </div>
+            
+                <div class="orbit venus-orbit"></div>
+                <div class="venus-spin">
+                    <div id="venus"></div>
+                </div>
+            
+                <div class="orbit earth-orbit"></div>
+                <div class="earth-spin">
+                    <div class="orbit moon-orbit"></div>
+                    <div class="moon-spin">
+                        <div id="moon"></div>
+                    </div>
+            
+                    <img id="earth"
+                        src="https://raw.githubusercontent.com/everdimension-personal/codepen-assets/master/earth_small_150.jpg" />
+                </div>
+            
+                <div class="orbit mars-orbit"></div>
+                <div class="mars-spin">
+                    <div id="mars"></div>
+                </div>
+            </div>
+            <h2 id="homeinfo">Home</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <h1 class="typewrite">Benjamin Knupfer</h1>
+            <br>
+            <h3 class="typewrite"> Willkommen auf meiner tollen Website</h2>
+        
+        </div>
+
+        <div id="profil">
+            <img src="" alt="einbild">
+            <h2>Profil</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor vitae, aliquam nulla ab quae, exercitationem, eum iusto fugit quis necessitatibus quas doloremque. Praesentium, ad expedita? Quae laborum dicta quos obcaecati.</p>
+            <div>animation Velo</div>
+        </div>
+        <div id="cv">
+            <h2>CV (Lebenslauf)</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis possimus optio provident iure, delectus quidem quasi, exercitationem laudantium recusandae labore commodi ad. Corrupti quam, impedit deleniti minima corporis mollitia culpa?</p>
+        </div>
+        <div id="portfolio">
+            <h2>Portfolio</h2>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas labore nulla itaque fugit! Officia ullam architecto optio deleniti sit blanditiis. Architecto, debitis sint. Fugit voluptate expedita ea nam, dolorem qui?</p>
+        </div>
+        <div id="kontakt">
+            <h2>Kontakt</h2>
+            <div>Icons</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptatem provident fuga at cupiditate adipisci ullam ducimus eveniet, labore animi repellendus quod perspiciatis cum debitis, error modi laudantium autem officiis!</p>
+        </div>
     </div>
-    <section id="home">
-        <div id="homebackground"></div>
-        <h2>Home</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-    </section>
-    <section id="profil">
-        <img src="" alt="einbild">
-        <h2>Profil</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor vitae, aliquam nulla ab quae, exercitationem, eum iusto fugit quis necessitatibus quas doloremque. Praesentium, ad expedita? Quae laborum dicta quos obcaecati.</p>
-        <div>animation Velo</div>
-    </section>
-    <section id="cv">
-        <h2>CV (Lebenslauf)</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis possimus optio provident iure, delectus quidem quasi, exercitationem laudantium recusandae labore commodi ad. Corrupti quam, impedit deleniti minima corporis mollitia culpa?</p>
-    </section>
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas labore nulla itaque fugit! Officia ullam architecto optio deleniti sit blanditiis. Architecto, debitis sint. Fugit voluptate expedita ea nam, dolorem qui?</p>
-    </section>
-    <section id="kontakt">
-        <h2>Kontakt</h2>
-        <div>Icons</div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptatem provident fuga at cupiditate adipisci ullam ducimus eveniet, labore animi repellendus quod perspiciatis cum debitis, error modi laudantium autem officiis!</p>
-    </section>
 </body>
 </html>
