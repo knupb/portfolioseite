@@ -122,7 +122,43 @@ body{
     background-image: url("images/sonne.png");
     background-size: relative;
     background-repeat: no-repeat;
-    justify-content: ;
+    justify-content:center ;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-color: white;
+}
+.cv {
+    background-image: url("images/venus.png");
+    background-size: relative;
+    background-repeat: no-repeat;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-color: white;
+}
+.portfolio {
+    background-image: url("images/merkur.png");
+    background-size: relative;
+    background-repeat: no-repeat;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    background-color: white;
+}
+.kontakt {
+    background-image: url("images/erde.png");
+    background-size: relative;
+    background-repeat: no-repeat;
+    justify-content: center;
     height: 100%;
     width: 100%;
     background-size: cover;
