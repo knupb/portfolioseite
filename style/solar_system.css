@@ -43,8 +43,7 @@ all objects and basically only vary in orbit size
 and planet size. And colors :) */
 
 #sun {
-    /* Positions the top-left corner of the image to be *
-	/* in the middle of the box */
+
     background-image: url("images/sonne.png");
     background-size:cover;
     height: 200px;
@@ -52,6 +51,7 @@ and planet size. And colors :) */
     margin-top: -100px;
     margin-left: -100px;
     border-radius: 50%;
+    box-shadow:0 0 199px  #a66832;
    
 }
 
@@ -122,7 +122,7 @@ and planet size. And colors :) */
     width: 25px;
     background-image: url('images/merkur.png');
     background-size: cover;
-    box-shadow: 0 0 34px #3a4385;
+    box-shadow: #3a4385;
 }
 
 .mercury-orbit,
