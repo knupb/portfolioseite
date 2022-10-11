@@ -1,0 +1,42 @@
+.typewrite {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    color: #F78012;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #F78012;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em;
+    /* Adjust as needed */
+    animation:
+        typing 7s steps(40, end),
+        blink-caret .35s step-end;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 20%
+    }
+}
+
+/* The typewriter cursor effect */
+/*@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    10% {
+        border-color: #F78012;
+    }
+}*/

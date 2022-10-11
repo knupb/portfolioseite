@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Allerta Stencil');/* Font import*/
 
+*::-webkit-scrollbar {
+    display: none;
+}
+*{  -ms-overflow-style: none;
+    scrollbar-width: none;
+}/*Weg mit scrollbar für sämtliche gängige browser*/
 body{
     font-family: 'Allerta Stencil', Verdana, Geneva, Tahoma, sans-serif;/*font in ' einfügen*/
+    background-color: #111;
 }
+
 .containernav {
     height: 100%;
     width: 0;
@@ -76,50 +84,8 @@ body{
 }
 
 
-.typewrite{
-    display: flex;
-    justify-content: space-around;
-    overflow: hidden;
-    color: #F78012;
-    /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #F78012;
-    /* The typwriter cursor */
-    white-space: nowrap;
-    /* Keeps the content on a single line */
-    margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .10em;
-    /* Adjust as needed */
-    animation:
-        typing 7s steps(40, end),
-        blink-caret .35s step-end;
-}
-
-/* The typing effect */
-@keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 20%
-    }
-}
-
-/* The typewriter cursor effect */
-/*@keyframes blink-caret {
-
-    from,
-    to {
-        border-color: transparent
-    }
-
-    10% {
-        border-color: #F78012;
-    }
-}*/
 .profil{
-    background-image: url("images/sonne.png");
+    background-image: url("images/sonne.png");/*quelle Bild: Nasa*/
     background-size: relative;
     background-repeat: no-repeat;
     justify-content:center ;
@@ -131,7 +97,7 @@ body{
     background-color: white;
 }
 .cv {
-    background-image: url("images/venus.png");
+    background-image: url("images/venus.png");/*quelle Bild: Nasa*/
     background-size: relative;
     background-repeat: no-repeat;
     justify-content: center;
@@ -143,7 +109,7 @@ body{
     background-color: white;
 }
 .portfolio {
-    background-image: url("images/merkur.png");
+    background-image: url("images/merkur.png");/*quelle Bild: Nasa*/
     background-size: relative;
     background-repeat: no-repeat;
     justify-content: center;
@@ -155,7 +121,7 @@ body{
     background-color: white;
 }
 .kontakt {
-    background-image: url("images/erde.png");
+    background-image: url("images/erde.png");/*quelle Bild: Nasa*/
     background-size: relative;
     background-repeat: no-repeat;
     justify-content: center;
