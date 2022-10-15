@@ -1,11 +1,14 @@
+
+
 .typewrite {
     display: flex;
     justify-content: space-around;
     overflow: hidden;
-    color: #F78012;
+    background: -webkit-linear-gradient(#B82301, #EF4E08,#FEDA09);/*macht linear gradient verschiedene farben*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #F78012;
-    /* The typwriter cursor */
+
     white-space: nowrap;
     /* Keeps the content on a single line */
     margin: 0 auto;
@@ -13,9 +16,10 @@
     letter-spacing: .10em;
     /* Adjust as needed */
     animation:
-        typing 7s steps(40, end),
-        blink-caret .35s step-end;
+        typing 4s steps(50, end),
+        blink-caret 2s ;
 }
+
 
 /* The typing effect */
 @keyframes typing {
@@ -24,7 +28,7 @@
     }
 
     to {
-        width: 20%
+        width: 40%
     }
 }
 

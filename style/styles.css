@@ -48,7 +48,9 @@ body{
     font-size: 20px;
     cursor: pointer;
     background-color: #111;
-    color: #F78012;
+    background: -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;/*macht linear gradient verschiedene farben*/
     padding: 10px 15px;
     border: none;
     right: 0;
@@ -61,7 +63,9 @@ body{
 
 .containernav a{
     text-decoration: none;
-    color:#F78012;
+    background: -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;/*macht linear gradient verschiedene farben*/
     display: block;
     padding: 16px 14px;
 }
@@ -78,57 +82,51 @@ body{
     background-color: #111;
 }
 .home{
+    display: inline_flex;
+    justify-content: center;
     background-image:url("images/stars.png");/*Quelle Nasahttps: //www.nasa.gov/feature/goddard/2018/hubble-paints-picture-of-the-evolving-universe/*/
     background-repeat: no-repeat;
-    background-size: cover;
+    min-width: 100vh;
+    min-height: 100vh;
+
 }
-
-
 .profil{
-    background-image: url("images/sonne.png");/*quelle Bild: Nasa*/
-    background-size: relative;
+    background-image: url("images/sonne2.png");/*quelle Bild: Nasa*/
     background-repeat: no-repeat;
-    justify-content:center ;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
+    background-size: flex;/* Sonne wird immer ganz angezeigt*/
+    justify-content:center;
     background-repeat: no-repeat;
-    justify-content: center;
-    background-color: white;
+    min-width: 100vh;
+    min-height: 100vh;
+
 }
 .cv {
     background-image: url("images/venus.png");/*quelle Bild: Nasa*/
-    background-size: relative;
+    background-size: contain;
     background-repeat: no-repeat;
     justify-content: center;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
-    background-color: white;
+    min-width: 100vh;
+    min-height: 100vh;
+
 }
 .portfolio {
     background-image: url("images/merkur.png");/*quelle Bild: Nasa*/
     background-size: relative;
     background-repeat: no-repeat;
     justify-content: center;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
-    background-color: white;
+    min-width: 100vh;
+    min-height: 100vh;
 }
 .kontakt {
     background-image: url("images/erde.png");/*quelle Bild: Nasa*/
     background-size: relative;
     background-repeat: no-repeat;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
     background-repeat: no-repeat;
     justify-content: center;
-    background-color: white;
+    min-width: 100vh;
+    min-height: 100vh;
 }

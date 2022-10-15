@@ -1,8 +1,7 @@
 .solar-system {
-    display: flex;/*soll immer im Zentrum sein*/
     justify-content: center;
-    width: 780px;
-    height: 780px;
+    width: 600px;
+    height: 600px;
     margin: auto;
     overflow: hidden;
     animation-play-state: running;
@@ -44,7 +43,7 @@ and planet size. And colors :) */
 
 #sun {
 
-    background-image: url("images/sonne.png");/*Quelle:Nasa Vektorisiert eigene Arbeit*/
+    background-image: url("images/sonne2.png");/*Quelle:Nasa Vektorisiert eigene Arbeit*/
     background-size:cover;
     height: 200px;
     width: 200px;
