@@ -7,6 +7,7 @@
     animation-play-state: running;
 }
 
+
 .solar-system:hover {
     animation-play-state: paused;
 }
@@ -50,7 +51,7 @@ and planet size. And colors :) */
     margin-top: -100px;
     margin-left: -100px;
     border-radius: 50%;
-    box-shadow:0 0 1px  #a66832;
+    box-shadow:#a66832;
    
 }
 
@@ -84,7 +85,7 @@ and planet size. And colors :) */
     border-radius: 50%;
     background-image: url("images/mond.png");/*Quelle:Nasa Vektorisiert eigene Arbeit*/
     background-size: cover;
-    box-shadow: 0 0 14px #3a4385;
+    box-shadow: #3a4385;
 }
 
 .moon-orbit,
@@ -164,7 +165,7 @@ and planet size. And colors :) */
     animation: spin-right 36.5s linear infinite;
     animation-play-state: running;
 }
-spin-right:hover{
+.earth-spin:hover{
     animation-play-state: paused;
 }
 

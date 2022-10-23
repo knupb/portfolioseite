@@ -1,80 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Allerta Stencil');/* Font import*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat');/* Font import*/
 
 *::-webkit-scrollbar {
     display: none;
+    
 }
 *{  -ms-overflow-style: none;
     scrollbar-width: none;
-}/*Weg mit scrollbar für sämtliche gängige browser*/
+/*Weg mit scrollbar für sämtliche gängige browser*/
+    scroll-behavior: smooth;/*scrollt sich schöner auf diesem weg*/
+
+}
 body{
-    font-family: 'Allerta Stencil', Verdana, Geneva, Tahoma, sans-serif;/*font in ' einfügen*/
+    font-family: 'Montserrat';/*font in ' einfügen*/
     background-color: #111;
 }
 
-.containernav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
 
-.containernav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 15px;
-    color: #000000;
-    display: block;
-    transition: 0.3s;
-}
-
-.containernav a:hover {
-    color: rgb(255, 255, 255);
-}
-
-.containernav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 40px;
-    margin-right: 50px;
-}
-
-.openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #111;
-    background: -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;/*macht linear gradient verschiedene farben*/
-    padding: 10px 15px;
-    border: none;
-    right: 0;
-    position:fixed;
-}
-
-.containernav ul{
-    list-style: none;
-}
-
-.containernav a{
-    text-decoration: none;
-    background: -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;/*macht linear gradient verschiedene farben*/
-    display: block;
-    padding: 16px 14px;
-}
-
-.containernav ul li a{
-    list-style: none;
-    margin: 5%;
-
-}
 #main {
     transition: margin-left .5s;
     padding: 16px;
@@ -82,7 +23,7 @@ body{
     background-color: #111;
 }
 .home{
-    display: inline_flex;
+    display: flex;
     justify-content: center;
     background-image:url("images/stars.png");/*Quelle Nasahttps: //www.nasa.gov/feature/goddard/2018/hubble-paints-picture-of-the-evolving-universe/*/
     background-repeat: no-repeat;
@@ -91,14 +32,9 @@ body{
 
 }
 .profil{
-    background-image: url("images/sonne2.png");/*quelle Bild: Nasa*/
-    background-repeat: no-repeat;
-    background-size: flex;/* Sonne wird immer ganz angezeigt*/
-    justify-content:center;
-    background-repeat: no-repeat;
     min-width: 100vh;
     min-height: 100vh;
-
+    color: aliceblue;
 }
 .cv {
     background-image: url("images/venus.png");/*quelle Bild: Nasa*/
