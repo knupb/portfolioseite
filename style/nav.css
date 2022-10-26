@@ -19,9 +19,12 @@
     transition: 0.3s;
 }
 
-.containernav a:hover {
-    color: rgb(255, 255, 255);
+.containernav a{
+
+    background: linear-gradient(#1095c1 0 0) var(--p, 0) 0/ var(--p, 0) .2em no-repeat;
+    transition: 0.4s, background-position 0s;
 }
+
 
 .containernav .closebtn {
     position: absolute;
@@ -58,6 +61,7 @@
     display: block;
     padding: 16px 14px;
 }
+
 
 .containernav ul li a {
     list-style: none;

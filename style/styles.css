@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');/* Font import*/
 
-*::-webkit-scrollbar {
-    display: none;
-    
-}
+
 *{  -ms-overflow-style: none;
     scrollbar-width: none;
 /*Weg mit scrollbar für sämtliche gängige browser*/
@@ -22,20 +19,6 @@ body{
     text-align: center;
     background-color: #111;
 }
-.home{
-    display: flex;
-    justify-content: center;
-    background-image:url("images/stars.png");/*Quelle Nasahttps: //www.nasa.gov/feature/goddard/2018/hubble-paints-picture-of-the-evolving-universe/*/
-    background-repeat: no-repeat;
-    min-width: 100vh;
-    min-height: 100vh;
-
-}
-.profil{
-    min-width: 100vh;
-    min-height: 100vh;
-    color: aliceblue;
-}
 .cv {
     background-image: url("images/venus.png");/*quelle Bild: Nasa*/
     background-size: contain;
@@ -49,7 +32,6 @@ body{
 }
 .portfolio {
     background-image: url("images/merkur.png");/*quelle Bild: Nasa*/
-    background-size: relative;
     background-repeat: no-repeat;
     justify-content: center;
     background-repeat: no-repeat;
@@ -59,7 +41,6 @@ body{
 }
 .kontakt {
     background-image: url("images/erde.png");/*quelle Bild: Nasa*/
-    background-size: relative;
     background-repeat: no-repeat;
     background-repeat: no-repeat;
     justify-content: center;

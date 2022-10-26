@@ -1,16 +1,62 @@
-.solar-system {
+.home {
+    display:flex;
     justify-content: center;
-    width: 600px;
-    height: 600px;
+    background-image: url("images/stars.png");
+    /*Quelle Nasahttps: //www.nasa.gov/feature/goddard/2018/hubble-paints-picture-of-the-evolving-universe/*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    place-items: center;
+    min-width: 100vh;
+    min-height: 100vh;
+
+}
+.welcome{
+    font-size: x-large;/*grosse Schrift*/
+    place-content: center;
+}
+.typewrite {
+    display: grid;
+    background-clip:text;
+    place-content: center;
+    justify-content: center;
+    overflow: hidden;
+    background: -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09);
+    /*macht linear gradient verschiedene farben*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .01em;
+    /* Adjust as needed */
+    animation:
+        typing 3s steps(100, end),
+        blink-caret 2s;
+}
+
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 80%
+    }
+}
+.solar-system {
+    width: 400px;
+    height: 400px;
     margin: auto;
     overflow: hidden;
-    animation-play-state: running;
+    place-content: center;
+    /*mix-blend-mode: exclusion;/*macht transparent gegenüber hintergrund*/
 }
 
 
-.solar-system:hover {
-    animation-play-state: paused;
-}
 
 /* Some positioning rules that are common for all objects */
 #sun,
@@ -51,7 +97,7 @@ and planet size. And colors :) */
     margin-top: -100px;
     margin-left: -100px;
     border-radius: 50%;
-    box-shadow:#a66832;
+    box-shadow:0 0 60px#a66832;/*glow*/
    
 }
 
@@ -85,7 +131,7 @@ and planet size. And colors :) */
     border-radius: 50%;
     background-image: url("images/mond.png");/*Quelle:Nasa Vektorisiert eigene Arbeit*/
     background-size: cover;
-    box-shadow: #3a4385;
+    box-shadow:0 0 10px #3a4385;
 }
 
 .moon-orbit,
@@ -122,7 +168,7 @@ and planet size. And colors :) */
     width: 25px;
     background-image: url('images/merkur.png');/*Quelle:Nasa Vektorisiert eigene Arbeit*/
     background-size: cover;
-    box-shadow: #3a4385;
+    box-shadow:0 0 14px #3a4385;
 }
 
 .mercury-orbit,
@@ -157,6 +203,7 @@ and planet size. And colors :) */
 @keyframes spin-right {
     100% {
         transform: rotate(360deg);
+        
     }
 
 }
@@ -164,9 +211,6 @@ and planet size. And colors :) */
 .earth-spin {
     animation: spin-right 36.5s linear infinite;
     animation-play-state: running;
-}
-.earth-spin:hover{
-    animation-play-state: paused;
 }
 
 .moon-spin {
