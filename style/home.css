@@ -20,7 +20,7 @@
     place-content: center;
     justify-content: center;
     overflow: hidden;
-    background: -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09);
+    background: -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09, #f6e99f);
     /*macht linear gradient verschiedene farben*/
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -168,7 +168,7 @@ and planet size. And colors :) */
     width: 25px;
     background-image: url('images/merkur.png');/*Quelle:Nasa Vektorisiert eigene Arbeit*/
     background-size: cover;
-    box-shadow:0 0 14px #3a4385;
+    box-shadow:0 0 30px #3a4385;
 }
 
 .mercury-orbit,
