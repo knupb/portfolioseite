@@ -55,7 +55,10 @@
 
 .containernav a {
     text-decoration: none;
-    background: -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09);
+    background: -webkit-linear-gradient(#B82301,
+        #EF4E08,
+        #FEDA09,
+        #f5eec9);
     background-clip: none;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
