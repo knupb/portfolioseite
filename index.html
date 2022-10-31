@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style\typewriter.css">
     <link rel="stylesheet" href="style\nav.css">
     <link rel="stylesheet" href="style\profil.css">
+    <link rel="stylesheet" href="style\kontakt.css">
 
 </head>
 <body>
@@ -32,7 +33,7 @@
             </div>
         <div class="welcome">
             <h1 class="typewrite" >Benjamin Knupfer</h1>
-            <h3 class="typewrite">Web Developer</h3>
+            <h3 class="typewrite">Web Development</h3>
         </div>
             
             <div class="orbit mercury-orbit"></div>
@@ -61,7 +62,11 @@
         </div>
     </section>
     <section class="profil">
-        <h1>Profil</h1>
+        <h1 id="profil">Profil</h1>
+        <video width="400" controls autoplay>
+            <source src="images/merkur.mov" type="video/mp4">
+        </video>
+        
     </section>
     <section class="cv">
         <h2 id="cv">CV (Lebenslauf)</h2>
@@ -70,26 +75,48 @@
     <section class="portfolio">
         <h2 id="portfolio">Portfolio</h2>
         <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas labore nulla itaque fugit! Officia ullam architecto optio deleniti sit blanditiis. Architecto, debitis sint. Fugit voluptate expedita ea nam, dolorem qui?</p>
-    </div>
-    <div class="kontakt">
+    </section>
+    <section class="kontakt">
         <h2 id="kontakt">Kontakt</h2>
         <div>Icons</div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptatem provident fuga at cupiditate adipisci ullam ducimus eveniet, labore animi repellendus quod perspiciatis cum debitis, error modi laudantium autem officiis!</p>
-       
-<div id="ww_106807fd712c5" v='1.3' loc='id'
-    a='{"t":"responsive","lang":"en","ids":["wl4108"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","cl_odd":"#00000000"}'>
-    Weather Data Source: <a href="https://wetterlabs.de/wetter_bern/14_tage/" id="ww_106807fd712c5_u"
-        target="_blank">wetter Bern 14 tage</a></div>
-<script async src="https://app1.weatherwidget.org/js/?id=ww_106807fd712c5"></script>
+        <div class="container">
+            <form action="action_page.php">
+        
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+        
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+                <div class="btn"><input type="submit" value="Submit" ></div>
+        
+            </form>
+        </div>
+        <div id="ww_106807fd712c5" v='1.3' loc='id'
+            a='{"t":"responsive","lang":"en","ids":["wl4108"],"font":"Monserrat","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"blue","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","cl_odd":"#00000000"}'>
+            Weather Data Source: <a href="https://wetterlabs.de/wetter_bern/14_tage/" id="ww_106807fd712c5_u"
+                target="_blank">wetter Bern 14 tage</a></div>
+        <script async src="https://app1.weatherwidget.org/js/?id=ww_106807fd712c5"></script>
 
-</script><!--quelle:https://weatherwidget.org/-->
-    <!-- Work in progress wetter ticker<div id="ww_f9a49243c1bda" v='1.3' loc='id'
-        a='{"t":"ticker","lang":"de","ids":["wl4108"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>
-        Weather Data Source: <a href="https://wetterlabs.de/wetter_bern/14_tage/" id="ww_f9a49243c1bda_u"
-            target="_blank">wetter Bern 14 tage</a></div>
-    <script async src="https://app1.weatherwidget.org/js/?id=ww_f9a49243c1bda">
-    </script> -->
-    </div>
+        </script><!--quelle:https://weatherwidget.org/-->
+            <!-- Work in progress wetter ticker<div id="ww_f9a49243c1bda" v='1.3' loc='id'
+                a='{"t":"ticker","lang":"de","ids":["wl4108"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>
+                Weather Data Source: <a href="https://wetterlabs.de/wetter_bern/14_tage/" id="ww_f9a49243c1bda_u"
+                    target="_blank">wetter Bern 14 tage</a></div>
+            <script async src="https://app1.weatherwidget.org/js/?id=ww_f9a49243c1bda">
+            </script> -->
+            </div>
 
     </section>
     <script src="scripts\sidebar.js"></script>

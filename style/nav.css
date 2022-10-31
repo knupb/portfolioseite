@@ -39,7 +39,7 @@
     cursor: pointer;
     background-color: #111;
     background: -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09,#f5eec9);/*Farbspektrum*/
-    
+    background-clip: initial;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /*macht linear gradient verschiedene farben*/

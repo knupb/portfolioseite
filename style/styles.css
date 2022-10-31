@@ -24,8 +24,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     justify-content: center;
-    background-repeat: no-repeat;
-    justify-content: center;
+
     min-width: 100vh;
     min-height: 100vh;
 
@@ -34,10 +33,8 @@ body{
     background-image: url("images/merkur.png");/*quelle Bild: Nasa*/
     background-repeat: no-repeat;
     justify-content: center;
-    background-repeat: no-repeat;
-    justify-content: center;
-    min-width: 100vh;
     min-height: 100vh;
+    min-width: 100vh;
 }
 .kontakt {
     background-image: url("images/erde.png");/*quelle Bild: Nasa*/
