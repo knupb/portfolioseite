@@ -97,7 +97,7 @@ and planet size. And colors :) */
     margin-top: -100px;
     margin-left: -100px;
     border-radius: 50%;
-    box-shadow:0 0 60px#a66832;/*glow*/
+    box-shadow:0 0 30px#a66832;/*glow*/
    
 }
 
@@ -168,7 +168,7 @@ and planet size. And colors :) */
     width: 25px;
     background-image: url('images/merkur.png');/*Quelle:Nasa Vektorisiert eigene Arbeit*/
     background-size: cover;
-    box-shadow:0 0 30px #3a4385;
+    box-shadow:0 0 20px #3a4385;
 }
 
 .mercury-orbit,

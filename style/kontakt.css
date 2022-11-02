@@ -2,7 +2,7 @@
  input[type=text],
  select,
  textarea {
-     width: 60%;
+     width: 100%;
      /* Full width */
      padding: 12px;
      /* Some padding */
@@ -16,9 +16,12 @@
      /* Add a top margin */
      margin-bottom: 16px;
      /* Bottom margin */
-     resize: vertical
+
+     resize: vertical;
          /* Allow the user to vertically resize the textarea (not horizontally) */
- }
+     align-items: center;
+     opacity: 90%;
+}
 
  .btn:before {
   top: 0;
