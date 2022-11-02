@@ -14,19 +14,19 @@
     background-size:
         10vmax,
         20vmax;
-    animation: 20s move linear infinite;
+    animation: 17s move linear infinite;
 }
 
 @keyframes move{
     0%{
         background-position: 
-        -40%,
-        -40%;
+        -39%,
+        -39%;
     }/*favoured rate for animation through tests own work*/
     100% {
         background-position:
-            +140%,/*verhalten merkur*/
-            +140%;
+            +135%,/*verhalten merkur*/
+            +135%;
     }
 }
 
