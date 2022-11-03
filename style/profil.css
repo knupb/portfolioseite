@@ -14,7 +14,7 @@
     background-size:
         10vmax,
         20vmax;
-    animation: 17s move linear infinite;
+    animation: 14s move linear infinite;/*best background animation timing*/
 }
 
 @keyframes move{

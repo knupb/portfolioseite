@@ -2,7 +2,7 @@
     display:flex;
     justify-content: center;
     background-image: url("images/stars.png");
-    /*Quelle Nasahttps: //www.nasa.gov/feature/goddard/2018/hubble-paints-picture-of-the-evolving-universe/*/
+    /*Quelle Nasa https: //www.nasa.gov/feature/goddard/2018/hubble-paints-picture-of-the-evolving-universe/*/
     background-repeat: no-repeat;
     background-size: cover;
     place-items: center;
@@ -47,7 +47,7 @@
         width: 80%
     }
 }
-.solar-system {
+.solar-system {/*https: //codepen.io/everdimension/pen/DwREaP strongly modified by https: //github.com/knupb */
     width: 400px;
     height: 400px;
     margin: auto;

@@ -44,3 +44,12 @@ body{
     min-width: 100vh;
     min-height: 100vh;
 }
+.impressum {
+    background-image: url("images/mars.png");
+    /*quelle Bild: Nasa*/
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    justify-content: center;
+    min-width: 100vh;
+    min-height: 100vh;
+}
