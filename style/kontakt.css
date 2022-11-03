@@ -50,3 +50,35 @@
   top: 0;
   height: 100%;
 }
+.kontakt{/*added animations to contact, to be extended*/
+height: 100vmin;
+width: 100vmax;
+background-color: rgba(3, 3, 3, 0.4);
+background-image: url('images/merkur.png'),
+url('images/sonne2.png');
+background-repeat: no-repeat;
+justify-items: center;
+background-position: 0,
+0;
+
+background-size: 10vmax,
+20vmax;
+animation: 14s move linear infinite;
+/*best background animation timing*/
+}
+
+@keyframes move {
+  0% {
+    background-position:
+      -39%,
+      -39%;
+  }
+
+  /*favoured rate for animation through tests own work*/
+  100% {
+    background-position:
+      +135%,
+      /*verhalten merkur*/
+      +135%;
+  }
+}
