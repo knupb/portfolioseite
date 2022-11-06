@@ -5,6 +5,7 @@
     scrollbar-width: none;
 /*Weg mit scrollbar für sämtliche gängige browser*/
     scroll-behavior: smooth;/*scrollt sich schöner auf diesem weg*/
+    box-sizing: border-box;
 
 }
 body{

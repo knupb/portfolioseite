@@ -1,8 +1,8 @@
 .profil{/*css animation own work for EWEB https: //github.com/knupb */
+    color: aliceblue;
     height: 100vmin;
     width: 100vmax;
     background-color: rgba(3, 3, 3, 0.4);
-    background: url("images/heart-of-the-tarantula-nebula.jpg");
     background-image:
         url('images/merkur.png'),
         url('images/sonne2.png');
@@ -31,3 +31,8 @@
     }
 }
 
+.containerstars{
+    height: 100vw;
+    width: 100vw;
+    
+}
