@@ -1,20 +1,20 @@
 .profil{/*css animation own work for EWEB https: //github.com/knupb */
+    box-sizing: border-box;
+    overflow: hidden;
     color: aliceblue;
     height: 100vmin;
     width: 100vmax;
-    background-color: rgba(3, 3, 3, 0.4);
     background-image:
         url('images/merkur.png'),
         url('images/sonne2.png');
     background-repeat: no-repeat;
-    justify-items: center;
     background-position:
         0,
         0;
 
     background-size:
-        10vmax,
-        20vmax;
+        10vw,
+        20vw;
     animation: 14s move linear infinite;/*best background animation timing*/
 }
 
@@ -32,6 +32,7 @@
 }
 
 .containerstars{
+    position: absolute;
     height: 100vw;
     width: 100vw;
     

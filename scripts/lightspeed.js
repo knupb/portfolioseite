@@ -47,6 +47,7 @@ c.onmousemove = (event) => {
 	pointerY = y;
 	}
 };
+/*
 c.ontouchmove = (e) => {
 	if(canJump){
 		touchInput = true;
@@ -79,7 +80,7 @@ document.onmouseleave = () => {
 	pointerY = null;
 };
 
-c.onmousedown = () => {
+/*c.onmousedown = () => {
 	if(canJump){
 		velocity.z =.5
 		velocity.z *=1;
@@ -136,24 +137,9 @@ c.onmouseup = () => {
 		}, (Math.random()*1200)+1500);
 	}
 }
-};
-document.onwheel = (e) => {
-	/* Check whether the wheel event is supported. */
-	if (e.type == "wheel") supportsWheel = true;
-	else if (supportsWheel) return;
-	if(canJump){
-		/* Determine the direction of the scroll (< 0 → up, > 0 → down). */
-		var delta = e.deltaY || e.deltaX || 1;
-		if(velocity.z > 1){
-			velocity.z = 1;
-		}else if(velocity.z < .0005){
-			velocity.z = .0005;
-		}else{
-			velocity.z -= delta/c.width/10;
+}; geschwindigkeit stoppen*/
 
-		}
-	}
-}
+
 class Star{
 	constructor(){
 		this.x = Math.random() * c.width;
