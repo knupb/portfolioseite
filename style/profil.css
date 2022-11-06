@@ -11,9 +11,10 @@
     background-position:
         0,
         0;
+    mix-blend-mode: lighten;
 
     background-size:
-        10vw,
+        5vw,
         20vw;
     animation: 14s move linear infinite;/*best background animation timing*/
 }
@@ -33,7 +34,6 @@
 
 .containerstars{
     position: absolute;
-    height: 100vw;
-    width: 100vw;
-    
+    height: 100%;
+    width: 100vw;   
 }

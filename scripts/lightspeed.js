@@ -47,98 +47,6 @@ c.onmousemove = (event) => {
 	pointerY = y;
 	}
 };
-/*
-c.ontouchmove = (e) => {
-	if(canJump){
-		touchInput = true;
-
-	//touch position
-	let x = event.touches[0].clientX;
-	let y = event.touches[0].clientY;
-
-	if(typeof pointerX === "number" && typeof pointerY === "number"){
-		//difference between initial and current
-		let offsetX = x - pointerX;
-		let offsetY = y - pointerY;
-
-		velocity.tailX += offsetX/8;
-		velocity.tailY += offsetY/8;
-
-	}
-	//reset
-	pointerX = x;
-	pointerY = y;
-	}
-e.preventDefault();
-};
-c.ontouchend = () => {
-	pointerX = null;
-	pointerY = null;
-};
-document.onmouseleave = () => {
-	pointerX = null;
-	pointerY = null;
-};
-
-/*c.onmousedown = () => {
-	if(canJump){
-		velocity.z =.5
-		velocity.z *=1;
-	}
-};
-c.onmouseup = () => {
-	if(canJump){
-		canJump = false;
-		velocity.z *=1;
-		stars.forEach((star) => {
-			stars.push(new Star());
-		});
-		Star.size(Math.random()+1); 
-	if(velocity.z > 5){ //prevents spam click
-		velocity.z /= 1;
-	}
-	else{ 
-		setTimeout( () => {
-			velocity.z /=1;
-			setTimeout( () => {
-				velocity.z /=2;
-				for(let i = 0; i< STAR_COUNT/4; i++)
-					stars.pop();
-				setTimeout( () => {
-					velocity.z /=2;
-					for(let i = 0; i< STAR_COUNT/4; i++)
-						stars.pop();
-					setTimeout( () => {
-						velocity.z /=5;
-						for(let i = 0; i< STAR_COUNT/4; i++){
-							stars.pop();
-						}
-						Star.size((Math.random()*3.5)+.6);
-						setTimeout( () => {
-							velocity.z /=5;
-							if(velocity.z != .0005) velocity.z = .0005;
-							for(let i = 0; i< STAR_COUNT/4; i++)
-								stars.pop();
-							if(stars.length > STAR_COUNT){
-								for(let i = 0; i< stars.length-STAR_COUNT; i++){
-									stars.pop();
-								}
-							}
-							else if(stars.length < STAR_COUNT){
-								for(let i = 0; i< STAR_COUNT - stars.length; i++){
-									stars.push(new Star());
-								}
-							}
-							canJump = true;
-						}, 400);
-					}, 500);
-				}, 600);
-			}, 800);
-		}, (Math.random()*1200)+1500);
-	}
-}
-}; geschwindigkeit stoppen*/
-
 
 class Star{
 	constructor(){
@@ -158,6 +66,15 @@ Star.size = (size) => {this.size = size}; //this always works
 
 generate();
 refresh();
+function openNav() {
+  document.getElementById("openclose").style.width = "100px";
+
+}
+
+function closeNav() {
+  document.getElementById("openclose").style.width = "0";
+
+}
 
 
 function generate() {
@@ -276,3 +193,4 @@ function recycle(star){
 		star.y = c.height + THRESHOLD;
 	}
 }
+

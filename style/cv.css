@@ -7,7 +7,6 @@
     background-color: rgba(3, 3, 3, 0.4);
     background-image:
         url('images/venus.png'),
-        url('images/merkur.png'),
         url('images/sonne2.png');
     background-repeat: no-repeat;
     justify-items: center;
@@ -17,8 +16,7 @@
         0;
 
     background-size:
-        15vmax,/*venus*/
-        10vmax,/*merkur*/
+        10vmax,/*venus*/
         20vmax;/*sun*/
     animation: 14s move linear infinite;
     /*best background animation timing*/
