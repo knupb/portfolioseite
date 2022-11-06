@@ -1,0 +1,234 @@
+.cv {
+    color: azure;
+    text-align: center;
+    /*css animation own work for EWEB https: //github.com/knupb */
+    height: 100vmin;
+    width: 100vmax;
+    background-color: rgba(3, 3, 3, 0.4);
+    background-image:
+        url('images/venus.png'),
+        url('images/merkur.png'),
+        url('images/sonne2.png');
+    background-repeat: no-repeat;
+    justify-items: center;
+    background-position:
+        0,
+        0,
+        0;
+
+    background-size:
+        15vmax,/*venus*/
+        10vmax,/*merkur*/
+        20vmax;/*sun*/
+    animation: 14s move linear infinite;
+    /*best background animation timing*/
+}
+
+@keyframes move {
+    0% {
+        background-position:
+            -45%,
+            -39%,
+            -39%;
+    }
+
+    /*favoured rate for animation through tests own work*/
+    100% {
+        background-position:
+            +120%,
+            +135%,
+            /*verhalten merkur*/
+            +135%;
+    }
+}
+.cv{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.timelinecontainer{
+    margin: 150px auto;
+    width:80vw;
+
+}
+.timelinecontainer input{
+    display: none;
+    position: absolute;
+}
+.head2{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    margin-top:60px;
+    animation: trans .7s linear forwards;
+}
+.timel{
+    padding-top: 15px;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+}
+.timel li{
+    list-style: none;
+    float: left;
+    width: 15%;
+    text-align: center;
+    font-size: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+    vertical-align: middle;
+    position: relative;
+}
+.timel li ::before{
+    content: '';
+    width:25px;
+    height: 25px;/*grösse Kreise*/
+    border: solid #aaa;/*color Kreise*/
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    transition: all .3s ease;
+}
+.timel li :hover:before {
+    border: 2px solid black;/*hoververhalten*/
+    background: white;
+}
+/*.timel li .inner{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+    font-weight: bolder;
+
+}*/
+/*.timel li .active,
+.timel li:hover{
+    color:white;
+}
+.timel li::after{
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    background: black;
+    border-radius: 50px;
+    margin: auto;
+    border:7px solid black;
+    margin-top: 40px;
+    box-shadow: 0px 0px 5px 0px rgb(255, 255, 255);
+}/*timelinepunkte*/
+/*.timel li:hover::after,
+.timel li.active::after{
+    background:red;
+}/*verhalten über die knöpfe*/
+.line{
+    width: 75%;
+    height: 7px;
+    position:absolute;
+    left: 15%; 
+    right: 15%;
+    top: 0px;
+    z-index: 1;
+    border-radius: 50px;
+}
+/*.line span{
+    content: '';
+    width: 20%;
+    background: -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09, #f6e99f);
+    position: absolute;
+    z-index: 2;
+    border-radius: 50px;
+    transition: all .8s ease;
+} */
+.content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    animation: anim .7s linear forwards;
+    flex-direction: column;
+}
+.content section{
+    width: 70%;
+    margin: auto;
+
+}
+.content section h1{
+    font-weight: 900;
+    margin-top: 10px;
+    text-align: center;
+}
+.content section p{
+    text-align: center;
+    padding: 30px 40px ;
+}
+/*zeigen welche aktiv*/
+.first:checked ~ .head2 .timel li.st1::before,
+.second:checked~.head2 .timel li.st2::before,
+.third:checked~.head2 .timel li.st3::before,
+.fourth:checked~.head2 .timel li.st4::before,
+.fifth:checked~.head2 .timel li.st5::before,
+.sixth:checked~.head2 .timel li.st6::before{
+    border:7px solid black;
+    background: white;
+    transition: all .3s ease;
+}
+/*.second:checked~.head2 .timel .line span{
+    width: 15%;
+} line geht nicht min 25*/ 
+/*hide content*/
+.studium-section,
+.asyl-section,
+.zivi-section,
+.receptionist-section,
+.client-section,
+.mpc-section{
+    transform: scale(0) translateY(0);
+    transform-origin: center bottom;
+    transition: all .7s ease;
+    position: absolute;
+    top: 0;
+}
+/*show content*/
+.first:checked ~ .content .studium-section,
+.second:checked~ .content .asyl-section,
+.third:checked~ .content .zivi-section,
+.fourth:checked~.content .receptionist-section,
+.fifth:checked~ .content .client-section,
+.sixth:checked~ .content .mpc-section {
+    display: block;
+    transform: scale(1) translateY(1);
+    transform-origin: bottom;
+}
+@keyframes anim {
+    0%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    50% {
+        opacity: .5;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes trans{
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    50% {
+        opacity: .5;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

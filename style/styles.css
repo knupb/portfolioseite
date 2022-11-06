@@ -19,16 +19,7 @@ body{
     text-align: center;
     background-color: #111;
 }
-.cv {
-    background-image: url("images/venus.png");/*quelle Bild: Nasa*/
-    background-size: contain;
-    background-repeat: no-repeat;
-    justify-content: center;
 
-    min-width: 100vh;
-    min-height: 100vh;
-
-}
 .portfolio {
     background-image: url("images/merkur.png");/*quelle Bild: Nasa*/
     background-repeat: no-repeat;
