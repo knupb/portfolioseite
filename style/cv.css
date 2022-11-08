@@ -184,7 +184,7 @@
 .receptionist-section,
 .client-section,
 .mpc-section{
-    transform: scale(0) translateY(0);
+    transform: scale(0);
     transform-origin: center bottom;
     transition: all .7s ease;
     position: absolute;
@@ -198,7 +198,7 @@
 .fifth:checked~ .content .client-section,
 .sixth:checked~ .content .mpc-section {
     display: block;
-    transform: scale(1) translateY(1);
+    transform: scale(1);
     transform-origin: bottom;
 }
 @keyframes anim {
