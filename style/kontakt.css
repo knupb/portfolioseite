@@ -2,7 +2,7 @@
    /*added animations to contact, to be extended*/
    height: 100vmin;
    width: 100vmax;
-   background-color: rgba(3, 3, 3, 0.4);
+   background-color: black;
    background-image: url('images/erde.png'),
      url('images/sonne2.png');
    background-repeat: no-repeat;
@@ -31,4 +31,5 @@
        +135%;
    }
  }
+
 

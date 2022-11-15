@@ -58,9 +58,6 @@ class Star{
 		this.opacity_factor = 1;
 		this.size = (Math.random()*3.5)+.6
 	}
-	// static size(size){ //works only sometimes
-	// 	this.size = size;
-	// }
 }
 Star.size = (size) => {this.size = size}; //this always works
 
@@ -193,4 +190,5 @@ function recycle(star){
 		star.y = c.height + THRESHOLD;
 	}
 }
+
 

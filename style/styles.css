@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');/* Font import*/
-
+@media only screen and (max-width: 600px) {
+    *{ margin-left: 0
+    }
+}
 
 *{  -ms-overflow-style: none;
     scrollbar-width: none;
@@ -8,6 +11,7 @@
     box-sizing: border-box;
 
 }
+
 body{
     font-family: 'Montserrat';/*font in ' einfügen*/
     background-color: #111;
@@ -22,6 +26,7 @@ body{
 }
 
 .portfolio {
+    overflow: hidden;/*keine Abschnitte zwischen sections*/
     background-image: url("images/merkur.png");/*quelle Bild: Nasa*/
     background-repeat: no-repeat;
     justify-content: center;
@@ -29,6 +34,7 @@ body{
     min-width: 100vh;
 }
 .kontakt {
+    overflow: hidden;
     background-image: url("images/erde.png");/*quelle Bild: Nasa*/
     background-repeat: no-repeat;
     background-repeat: no-repeat;

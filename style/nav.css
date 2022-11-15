@@ -74,3 +74,12 @@
     margin: 5%;
 
 }
+@media screen and (max-height: 450px) {
+    .containernav {
+        padding-top: 15px;
+    }
+
+    .containernav a {
+        font-size: 18px;
+    }
+}
