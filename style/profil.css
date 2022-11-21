@@ -10,8 +10,8 @@
     z-index: 2;
     overflow: hidden;
     color: aliceblue;
-    height: 100vmin;
-    width: 100vmax;
+    height: 100vh;
+    width: 100vw;
     background-image:
         url('images/merkur.png'),
         url('images/sonne2.png');
