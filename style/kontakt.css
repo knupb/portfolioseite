@@ -1,7 +1,7 @@
  .kontakt {
    /*added animations to contact, to be extended*/
-   height: 100vmin;
-   width: 100vmax;
+   height: 100vh;
+   width: 100vw;
    background-color: black;
    background-image: url('images/erde.png'),
      url('images/sonne2.png');

@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     place-items: center;
-    min-width: 100vh;
+    min-width: 100vw;
     min-height: 100vh;
 
 }
