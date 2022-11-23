@@ -20,7 +20,8 @@
     place-content: center;
     justify-content: center;
     overflow: hidden;
-    background: -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09, #f6e99f);
+    background: linear-gradient(#B82301, #EF4E08, #FEDA09, #f6e99f);/*fix problem with resizing on other browsers and github deployment*/
+    -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09, #f6e99f);
     /*macht linear gradient verschiedene farben*/
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
