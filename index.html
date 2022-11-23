@@ -13,12 +13,13 @@
     <link rel="stylesheet" href="style\cv.css">
     <link rel="stylesheet" href="style\portfolio.css">
     <link rel="stylesheet" href="style\kontakt.css">
-    <link rel="stylesheet" href="style\css\font-awesome.min.css"><!--anschauen-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
    
         <div id="openclose" class="containernav">
-            <div  class="closebtn" onclick="closeNav()">×</div>
+            <div  class="closebtn" onclick="closeNav()"><a href="">X</a></div>
             <a href="#home">Home</a>
             <a href="#profil">Profil</a>
             <a href="#cv">CV</a>
@@ -161,20 +162,20 @@
             <div class="skillcontainer"><!--quelle:stark adaptiert:https://codepen.io/_niikhil/pen/MWpeqby-->
                 <div class="box">
                     <div class="imgBox">
-                        <img src=""
+                        <img src="style/images/Python.svg"
                             alt="">
                     </div>
                     <div class="skillcontent">
                         <h2>Python</br>
-                            <span></span>
+                            <span>blabla</span>
                         </h2>
                     </div>
-                </div>
+                    
             </div>
     </section>
     <section class="kontakt">
         <h2 id="kontakt">Kontakt</h2>
-        <div class="containerform"></div>
+        <div class="containerform">
             <form action="https://api.web3forms.com/submit" method="POST"><!--template web3forms angepasst-->       
                 <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
                 <input type="text" name="name" required>
@@ -204,13 +205,12 @@
         </div>
     </section>
     <!--footer-->
-    <footer class="">
+    <footer class="foot">
+        <i class="fa fa-github" style="color:white;font-size: 50px;"></i>
+        <i class="fa fa-gitlab" style="color:white;font-size: 50px;"></i>
+        <i class="fa fa-linkedin-square"style="color:white;font-size: 50px;"></i>
         <i class=""></i>
-        <i class=""></i>
-        <i class=""></i>
-        <i class=""></i>
-        <i class=""></i>
-        <i class=""></i>
+
     </footer>
     <script src="scripts\sidebar.js"></script>
     <script src="scripts\lightspeed.js"></script>

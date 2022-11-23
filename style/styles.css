@@ -14,7 +14,7 @@
 
 body{
     font-family: 'Montserrat';/*font in ' einfügen*/
-    background-color: #111;
+    background-color: black;
 }
 
 
@@ -22,24 +22,11 @@ body{
     transition: margin-left .5s;
     padding: 16px;
     text-align: center;
-    background-color: #111;
+    background-color: black;
 }
 
-.portfolio {
-    overflow: hidden;/*keine Abschnitte zwischen sections*/
-    background-image: url("images/merkur.png");/*quelle Bild: Nasa*/
-    background-repeat: no-repeat;
-    justify-content: center;
-    min-height: 100vh;
-    min-width: 100vh;
-}
-.kontakt {
-    overflow: hidden;
-    background-image: url("images/erde.png");/*quelle Bild: Nasa*/
-    background-repeat: no-repeat;
-    background-repeat: no-repeat;
-    justify-content: center;
-    min-width: 100vh;
-    min-height: 100vh;
+footer{
+    align-items: center;
+    text-align: center;
 }
 

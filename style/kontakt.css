@@ -31,5 +31,9 @@
        +135%;
    }
  }
-
+.containerform input{
+  position: relative;
+  justify-items: center;
+  justify-content: center;
+}
 
