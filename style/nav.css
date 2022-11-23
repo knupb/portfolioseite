@@ -21,8 +21,7 @@
 }
 
 .containernav a{
-
-    background: linear-gradient(#1095c1 0 0) var(--p, 0) 0/ var(--p, 0) .2em no-repeat;
+    background: linear gradient(#B82301, #EF4E08, #FEDA09, #f5eec9);
     transition: 0.4s, background-position 0s;
 }
 
