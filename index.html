@@ -13,21 +13,19 @@
     <link rel="stylesheet" href="style\cv.css">
     <link rel="stylesheet" href="style\portfolio.css">
     <link rel="stylesheet" href="style\kontakt.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-   
-        <div id="openclose" class="containernav">
-            <div  class="closebtn" onclick="closeNav()"><a href="javascript:void(0);">X</a></div>
-            <a href="#home">Home</a>
-            <a href="#profil">Profil</a>
-            <a href="#cv">CV</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#kontakt">Kontakt</a>
-        </div>
     <div>
         <button class="openbtn" onclick="openNav()">☰</button>
+    </div>
+    <div id="openclose" class="containernav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a><!--div tried but anchor works better-->
+        <a href="#home">Home</a>
+        <a href="#profil">Profil</a>
+        <a href="#cv">CV</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#kontakt">Kontakt</a>
     </div>
     <!--Home-->
     <section class="home" id="home"> <!--Mit id funktioniert nav-->
@@ -65,7 +63,7 @@
         </div>
     </section>
     <!--Profil-->
-    <section class="profil"id="profil">
+    <section class="profil" id="profil">
         <div class="textprofil">
             <h1>Profil</h1>
             <p>Mein Name ist Benjamin Knupfer</p>
@@ -80,8 +78,8 @@
         </div>
     </section>
     <!--cv-->
-    <section class="cv">
-        <h2 id="cv">CV (Lebenslauf)</h2>
+    <section class="cv" id="cv">
+        <h2>CV (Lebenslauf)</h2>
         <div class="cvcontainer"></div>
             <div class="timelinecontainer"><!--buttons-->
                 <input type="radio" class="first" id="" checked>
@@ -185,7 +183,6 @@
                 <button type="submit" disabled></button>Nachricht senden</button><!--disabled bis angebunden-->
             </form>
         </div>
-        <div>Icons</div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur voluptatem provident fuga at cupiditate adipisci ullam ducimus eveniet, labore animi repellendus quod perspiciatis cum debitis, error modi laudantium autem officiis!</p>
         <div class="containercont">         
         </div>
@@ -193,24 +190,17 @@
             a='{"t":"responsive","lang":"en","ids":["wl4108"],"font":"Monserrat","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"lightgoldenrodyellow","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","cl_odd":"#00000000"}'>
             Weather Data Source: <a href="https://wetterlabs.de/wetter_bern/14_tage/" id="ww_106807fd712c5_u"
                 target="_blank">wetter Bern 14 tage</a></div>
-        <script async src="https://app1.weatherwidget.org/js/?id=ww_106807fd712c5"></script>
-
-        </script><!--quelle:https://weatherwidget.org/-->
-            <!-- Work in progress wetter ticker<div id="ww_f9a49243c1bda" v='1.3' loc='id'
-                a='{"t":"ticker","lang":"de","ids":["wl4108"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"#000000","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>
-                Weather Data Source: <a href="https://wetterlabs.de/wetter_bern/14_tage/" id="ww_f9a49243c1bda_u"
-                    target="_blank">wetter Bern 14 tage</a></div>
-            <script async src="https://app1.weatherwidget.org/js/?id=ww_f9a49243c1bda">
-            </script> -->
         </div>
     </section>
     <!--footer-->
     <footer class="foot">
-        <i class="fa fa-github" style="color:white;font-size: 50px;"></i>
-        <i class="fa fa-gitlab" style="color:white;font-size: 50px;"></i>
-        <i class="fa fa-linkedin-square"style="color:white;font-size: 50px;"></i>
+        <p>Contact me via:</p>
+        <a href="https://github.com/knupb"><i class="fa fa-github" style="color:white;font-size: 50px;"></i></a>
+        <a href="https://gitlab.com/BenjaminKnupfer"><i class="fa fa-gitlab" style="color:white;font-size: 50px;"></i></a>
+        <a href="https://www.linkedin.com/in/benjamin-knupfer-579284232/"><i class="fa fa-linkedin-square"style="color:white;font-size: 50px;"></i></a>
     </footer>
     <script src="scripts\sidebar.js"></script>
     <script src="scripts\lightspeed.js"></script>
+    <script async src="https://app1.weatherwidget.org/js/?id=ww_106807fd712c5"></script>
 </body>
 </html>
