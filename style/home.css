@@ -50,9 +50,8 @@
 .solar-system {/*https: //codepen.io/everdimension/pen/DwREaP strongly modified by https: //github.com/knupb */
     width: 400px;
     height: 400px;
-    margin: auto;
-    overflow: hidden;
     place-content: center;
+    position: relative;
     /*mix-blend-mode: exclusion;/*macht transparent gegenüber hintergrund*/
 }
 
@@ -224,4 +223,8 @@
 
 .mars-spin {
     animation: spin-right 68.7s linear infinite;
+}
+@media (max-width: 768px) {
+    .solar-system{ max-width:100vw}
+    
 }

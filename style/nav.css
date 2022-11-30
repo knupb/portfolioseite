@@ -21,7 +21,7 @@
 }
 
 .containernav a{
-    background: linear gradient(#B82301, #EF4E08, #FEDA09, #f5eec9);
+    background: linear-gradient(#B82301, #EF4E08, #FEDA09, #f5eec9);
     transition: 0.4s, background-position 0s;
 }
 
@@ -47,6 +47,7 @@
     border: none;
     right: 0;
     position: fixed;
+    z-index: 100;
 }
 
 .containernav ul {
