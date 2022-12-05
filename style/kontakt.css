@@ -30,12 +30,15 @@
        +135%;
    }
  }
-.containerform input{
+.containerform{
   position: relative;
-  justify-items: center;
   justify-content: center;
+  align-items: center;
 }
 footer {
   color: white; /*textcolor footer*/
 }
-
+.wetter{
+  margin-left: 30vw;
+  margin-right: 30vw;
+}
