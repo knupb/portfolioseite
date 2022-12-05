@@ -1,4 +1,5 @@
  .kontakt {
+  color: #EF4E08;/*make text visible*/
    /*added animations to contact, to be extended*/
    height: 100vh;
    width: 100vw;
@@ -30,15 +31,27 @@
        +135%;
    }
  }
-.containerform{
+ 
+.containerform{/*whole form*/
+  display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
 }
-footer {
-  color: white; /*textcolor footer*/
+.containerform input{/*single form fields*/
+  width: 70vw;
+
+} 
+.foot p{/*text footer*/
+    background: -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09,#f5eec9);/*Farbspektrum*/
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.wetter{
-  margin-left: 30vw;
-  margin-right: 30vw;
+.logofoot {/*logo footer*/
+    background: -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09,#f5eec9);/*Farbspektrum*/
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /*textcolor footer*/
 }
+
