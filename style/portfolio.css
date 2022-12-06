@@ -1,7 +1,7 @@
 .portfolio {
     /*css animation own work for EWEB https: //github.com/knupb */
-    height: 100vmin;
-    width: 100vmax;
+    height: 80vh;
+    width: 100vw;
     background-color: rgba(3, 3, 3, 0.4);
     background-image:
         url('images/mond.png'),

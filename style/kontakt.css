@@ -1,7 +1,8 @@
  .kontakt {
-  color: #EF4E08;/*make text visible*/
+  position: relative;
+  color: white;/*make text visible*/
    /*added animations to contact, to be extended*/
-   height: 100vh;
+   height: 80vh;/*footer soll sichtbar sein*/
    width: 100vw;
    background-color: black;
    background-image: url('images/erde.png'),
@@ -31,22 +32,71 @@
        +135%;
    }
  }
+
+.kontakt h2,p{
+  text-align: center;
+}
  
 .containerform{/*whole form*/
+  background-color: transparent;
+  text-align: center;
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
+  background-color: none;
 }
 .containerform input{/*single form fields*/
-  width: 70vw;
+  background-color: transparent;
+  width: 30%;
+  text-align: center;
+  border-radius: 5%;
+  text-decoration: none;
+
+}
+/*quelle bounce*/
+.containerform button{
+  background-color: transparent;
+  animation: bouncy 4s infinite linear;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  color: #B82301;
+  border-radius: 5%;
+
 
 } 
+@keyframes bouncy {
+  0%{top:0em}
+  40%{top:0em}
+  43%{top:-0.9em}
+  46%{top:0em}
+  48%{top:-0.4em}
+  50%{top:0em}
+  100%{top:0em;}
+}
+.wetter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.foot .logofoot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+}
 .foot p{/*text footer*/
     background: -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09,#f5eec9);/*Farbspektrum*/
     background-clip: initial;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
 }
 .logofoot {/*logo footer*/
     background: -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09,#f5eec9);/*Farbspektrum*/
