@@ -95,6 +95,10 @@
     border: 2px solid black;/*hoververhalten*/
     background: white;
 }
+
+.active:before {
+    background: white
+}
 /*.timel li .inner{
     position: absolute;
     width: 100%;
@@ -165,11 +169,11 @@
 }
 /*zeigen welche aktiv*/
 .first:checked ~ .head2 .timel li.st1::before,
-.second:checked~.head2 .timel li.st2::before,
-.third:checked~.head2 .timel li.st3::before,
-.fourth:checked~.head2 .timel li.st4::before,
-.fifth:checked~.head2 .timel li.st5::before,
-.sixth:checked~.head2 .timel li.st6::before{
+.second:checked ~ .head2 .timel li.st2::before,
+.third:checked ~ .head2 .timel li.st3::before,
+.fourth:checked ~ .head2 .timel li.st4::before,
+.fifth:checked ~ .head2 .timel li.st5::before,
+.sixth:checked ~ .head2 .timel li.st6::before{
     border:7px solid black;
     background: white;
     transition: all .3s ease;
