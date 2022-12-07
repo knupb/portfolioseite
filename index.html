@@ -112,26 +112,20 @@
                     <h2 class="inner">2005-2009</h2>
                 </li>
             </ul>
-            <div class="line">
-                <span></span>
-            </div>
         </div>
 
         <div class="content">
             <section class="studium-section">
-                <span></span>
                 <h1>Studium BsC</h1>
                 <p>Studium BSc Wirtschaftsinformatik an der Berner Fachhochschule</p>
             </section>
             <section class="asyl-section">
-                <span></span>
                 <h1>Asylkoordinator und Liegenschaftsverantwortlicher</h1>
                 <p>Asylkoordinator:
                     Liegenschaftsverantwortlicher:
                 </p>
             </section>
             <section class="zivi-section">
-                <span></span>
                 <h1>Diverse Zivijobs</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quaerat id aperiam laboriosam eius,
                     animi
@@ -140,17 +134,14 @@
                     reprehenderit et doloremque!</p>
             </section>
             <section class="receptionist-section">
-                <span></span>
                 <h1>Rezeptionist</h1>
                 <p>Belle Epoque Hotel Victoria Kandersteg ***</p>
             </section>
             <section class="client-section">
-                <span></span>
                 <h1>Client Services</h1>
                 <p>Eurocentres Cambridge in Cambridge UK</p>
             </section>
             <section class="mpc-section">
-                <span></span>
                 <h1>Diplôme Commercial und Maturité professionel commercial</h1>
                 <p>Maturité professionel commercial - Berufsmaturität in franzosicher Sprache: ESC La Neuveville </p>
                 <p>Diplôme Commercial - Handelsdiplom in französicher Sprache: ESC La Neuveville</p>
@@ -162,22 +153,14 @@
 <!--portfolio-->
 <section class="portfolio">
     <h2 id="portfolio">Portfolio und Skills</h2>
-    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas labore nulla itaque fugit! Officia ullam
-        architecto optio deleniti sit blanditiis. Architecto, debitis sint. Fugit voluptate expedita ea nam, dolorem
-        qui?</p>
-    <div class="skillcontainer"><!--quelle:stark adaptiert:https://codepen.io/_niikhil/pen/MWpeqby-->
-        <div class="box">
-            <div class="imgBox">
-                <img src="style/images/Python.svg"
-                     alt="">
-            </div>
-            <div class="skillcontent">
-                <h2>Python</br>
-                    <span>blabla</span>
-                </h2>
-            </div>
+    <div class="python"></div>
+    <div class="typescript"></div>
+    <div class="css"></div>
+    <div class="html"></div>
+    <div class="javascript"></div>
+    <div class="sql"></div>
+    <!--databases-->
 
-        </div>
 </section>
 <section class="kontakt" id="kontakt"><!--id für navigation-->
     <h2>Kontakt</h2>
@@ -226,34 +209,7 @@
                                                                              style="font-size: 50px;"></i></a>
     </div>
 </footer>
-<script>
-    const relevantIds = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth']
-    const elements = []
-    for (let id of relevantIds) {
-        const element = document.getElementById(id)
-        elements.push(element)
-    }
-    const h2elements = document.querySelectorAll('h2.inner')
-    console.log(h2elements)
-    for (let i = 0; i < h2elements.length; i++) {
-        const relevantId = relevantIds[i]
-        const element = h2elements[i]
-        element.relevantId = relevantId
-        element.addEventListener('click', () => {
-            element.classList.toggle('active')
-            h2elements.forEach(el => {
-                if (el !== element) {
-                    el.classList.remove('active')
-                }
-            })
-            const radioButton = document.getElementById(relevantId)
-            radioButton.checked = !radioButton.checked
-            relevantIds.filter(el => el !== relevantId).forEach(el => {
-                document.getElementById(el).checked = false
-            })
-        })
-    }
-</script>
+<script src="scripts\cv.js"></script>
 <script src="scripts\sidebar.js"></script>
 <script src="scripts\lightspeed.js"></script>
 <script async src="https://app1.weatherwidget.org/js/?id=ww_106807fd712c5"></script>

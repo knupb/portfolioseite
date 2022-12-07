@@ -39,6 +39,9 @@
             +135%;
     }
 }
+.first{
+    background-image: url("images/erde.png");
+}
 .cvcontainer{
     padding: 0;
     margin: 0;
@@ -92,66 +95,20 @@
     transition: all .3s ease;
 }
 .timel li :hover:before {
-    border: 2px solid black;/*hoververhalten*/
     background: white;
 }
 
 .active:before {
     background: white
 }
-/*.timel li .inner{
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    font-size: 14px;
-    font-weight: bolder;
 
-}*/
-/*.timel li .active,
-.timel li:hover{
-    color:white;
-}
-.timel li::after{
-    content: '';
-    display: block;
-    width: 7px;
-    height: 7px;
-    background: black;
-    border-radius: 50px;
-    margin: auto;
-    border:7px solid black;
-    margin-top: 40px;
-    box-shadow: 0px 0px 5px 0px rgb(255, 255, 255);
-}/*timelinepunkte*/
-/*.timel li:hover::after,
-.timel li.active::after{
-    background:red;
-}/*verhalten über die knöpfe*/
-.line{
-    width: 75%;
-    height: 7px;
-    position:absolute;
-    left: 15%; 
-    right: 15%;
-    top: 0px;
-    z-index: 1;
-    border-radius: 50px;
-}
-/*.line span{
-    content: '';
-    width: 20%;
-    background: -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09, #f6e99f);
-    position: absolute;
-    z-index: 2;
-    border-radius: 50px;
-    transition: all .8s ease;
-} */
+
 .content{
     position: relative;
     display: flex;
     justify-content: center;
     animation: anim .7s linear forwards;
-    flex-direction: column;
+
 }
 .content section{
     width: 70%;
@@ -167,21 +124,7 @@
     text-align: center;
     padding: 30px 40px ;
 }
-/*zeigen welche aktiv*/
-.first:checked ~ .head2 .timel li.st1::before,
-.second:checked ~ .head2 .timel li.st2::before,
-.third:checked ~ .head2 .timel li.st3::before,
-.fourth:checked ~ .head2 .timel li.st4::before,
-.fifth:checked ~ .head2 .timel li.st5::before,
-.sixth:checked ~ .head2 .timel li.st6::before{
-    border:7px solid black;
-    background: white;
-    transition: all .3s ease;
-}
-/*.second:checked~.head2 .timel .line span{
-    width: 15%;
-} line geht nicht min 25*/ 
-/*hide content*/
+
 .studium-section,
 .asyl-section,
 .zivi-section,
@@ -234,4 +177,9 @@
         opacity: 1;
         transform: translateY(0px);
     }
+}
+.asyl-section{/*bildertest*/
+        background-image:url("/style/images/mars.png");
+        background-repeat: no-repeat ;
+        background-size: cover;
 }

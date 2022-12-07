@@ -1,126 +1,187 @@
 .portfolio {
     /*css animation own work for EWEB https: //github.com/knupb */
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
     background-color: rgba(3, 3, 3, 0.4);
     background-image:
         url('images/mond.png'),
         url('images/erde.png');
     background-repeat: no-repeat;
-    justify-items: center;
     background-position:
-        0,
         0;
 
     background-size:
         10vmax,
         20vmax;
-    animation: 14s move linear infinite;
+    animation: move 14s linear infinite;
     /*best background animation timing*/
 }
 
 @keyframes move {
     0% {
         background-position:
-            -39%,
             -39%;
     }
 
     /*favoured rate for animation through tests own work*/
     100% {
         background-position:
-            +135%,
-            /*verhalten merkur*/
             +135%;
     }
 }
-.portfolio,
-.portfolio::after,
-.portfolio::before {
-    margin: 0;
-    padding: 0;
-}
-
-.skillcontainer {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.skillcontainer .box {
-    position: relative;
-    width: 10rem;
-    height: 10rem;
-    margin: 4rem;
-}
-
-.skillcontainer .box:hover .imgBox {
-    transform: translate(-3.5rem, -3.5rem);
-}
-
-.skillcontainer .box:hover .content {
-    transform: translate(3.5rem, 3.5rem);
-    /*animate__flip/ möglicherweise einbauen*/
-}
-
-.imgBox {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 10%;
-    height: 10%;
-    z-index: 2;
-    transition: all 0.5s ease-in-out ;
-
-}
-
-.imgBox img {
-    width: 10rem;
-    height: 10rem;
-    object-fit: cover;
-    resize: both;/*image size*/
-}
-
-.skillcontent {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 10%;
-    height: 10%;
-    padding: 1.5rem;
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-    align-items: flex-end;
+.portfolio h2{
+    color: aliceblue;
     text-align: center;
-    transition: 0.5s ease-in-out;
 }
 
-/*.skillcontent h2 {
-    display: block;
-    font-size: 2rem;
-    color: white;
-    font-weight: 500;
-    line-height: 2rem;
-    letter-spacing: 1px;
+.python {
+    margin-top:  3vh;
+    margin-left: 20vw ;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: azure;
+    background-image: url("images/python.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: width 1s, height 1s, transform 1s;
+    box-shadow: 0px 0px 40px white;
 }
 
-/*.skillcontent span {
-    color: white;
-    font-size: 1.4rem;
-    font-weight: 300;
-    letter-spacing: 2px;
-    
-}/*untertitel span*/
-
-@media (max-width: 600px) {
-    .skillcontainer .box:hover .skillcontent {
-        transform: translate(0, 3.5rem);
-    }
-
-    .skillcontainer .box:hover .imgBox {
-        transform: translate(0, -3.5rem);
-    }
+.python:hover {
+    width: 150px;
+    height: 150px;
+    transform: rotate(360deg);
 }
+.typescript {
+    margin-top: 2vh;
+    margin-left: 10vw ;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("images/typescript.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: width 1s, height 1s, transform 1s;
+    box-shadow: 0px 0px 40px blue;
+}
+
+.typescript:hover {
+    width: 150px;
+    height: 150px;
+    transform: rotate(360deg);
+}
+.html {
+    margin-top: 2vh;
+    margin-left: 20vw ;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("images/html.png");
+    background-repeat: no-repeat;
+    background-position: center;/*full logo*/
+    background-size: contain;
+    background-color: aliceblue;
+    transition: width 1s, height 1s, transform 1s;
+    box-shadow: 0px 0px 40px orange;
+}
+
+.html:hover {
+    width: 150px;
+    height: 150px;
+    transform: rotate(360deg);
+}
+.javascript {
+    margin-top: 2vh;
+    margin-left: 10vw ;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("images/js.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: width 1s, height 1s, transform 1s;
+    box-shadow: 0px 0px 40px yellow;
+}
+
+.javascript:hover {
+    width: 150px;
+    height: 150px;
+    transform: rotate(360deg);
+}
+.sql {
+    margin-top: 2vh;
+    margin-left: 20vw ;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("images/sql.png");
+    background-color: aliceblue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: width 1s, height 1s, transform 1s;
+    box-shadow: 0px 0px 40px orange;
+}
+
+.sql:hover {
+    width: 150px;
+    height: 150px;
+    transform: rotate(360deg);
+}
+/*dbs*/
+.typescript {
+    margin-top: 2vh;
+    margin-right: 10vw ;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("images/typescript.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: width 1s, height 1s, transform 1s;
+    box-shadow: 0px 0px 40px blue;
+}
+
+.typescript:hover {
+    width: 150px;
+    height: 150px;
+    transform: rotate(360deg);
+}
+.html {
+    margin-top: 2vh;
+    margin-right: 20vw ;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("images/html.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: width 1s, height 1s, transform 1s;
+    box-shadow: 0px 0px 40px orange;
+}
+
+.html:hover {
+    width: 150px;
+    height: 150px;
+    transform: rotate(360deg);
+}
+.javascript {
+    margin-top: 2vh;
+    margin-right: 10vw ;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("images/js.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: width 1s, height 1s, transform 1s;
+    box-shadow: 0px 0px 40px yellow;
+}
+
+.javascript:hover {
+    width: 150px;
+    height: 150px;
+    transform: rotate(360deg);
+}
+/*frameworks*/

@@ -2,7 +2,7 @@
   position: relative;
   color: white;/*make text visible*/
    /*added animations to contact, to be extended*/
-   height: 80vh;/*footer soll sichtbar sein*/
+   height: 100vh;/*footer soll sichtbar sein*/
    width: 100vw;
    background-color: black;
    background-image: url('images/erde.png'),
@@ -64,9 +64,8 @@
   font-weight: bold;
   color: #B82301;
   border-radius: 5%;
-
-
 } 
+
 @keyframes bouncy {
   0%{top:0em}
   40%{top:0em}
