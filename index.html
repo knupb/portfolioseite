@@ -16,213 +16,246 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    
-    <button class="openbtn" onclick="openNav()">☰</button>
-    
-    <div id="openclose" class="containernav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a><!--div tried but anchor works better-->
-        <a href="#home">Home</a>
-        <a href="#profil">Profil</a>
-        <a href="#cv">CV</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#kontakt">Kontakt</a>
-    </div>
-    <!--Home-->
-    <section class="home" id="home"> <!--Mit id funktioniert nav-->
-        <div class="solar-system"><!--source basic template:https://codepen.io/everdimension/pen/DwREaP  adaptions my own-->
-            <div id="sun">
-            </div>
+
+<button class="openbtn" onclick="openNav()">☰</button>
+
+<div id="openclose" class="containernav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a><!--div tried but anchor works better-->
+    <a href="#home">Home</a>
+    <a href="#profil">Profil</a>
+    <a href="#cv">CV</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#kontakt">Kontakt</a>
+</div>
+<!--Home-->
+<section class="home" id="home"> <!--Mit id funktioniert nav-->
+    <div class="solar-system"><!--source basic template:https://codepen.io/everdimension/pen/DwREaP  adaptions my own-->
+        <div id="sun">
+        </div>
         <div class="welcome">
-            <h1 class="typewrite" >Benjamin Knupfer</h1>
+            <h1 class="typewrite">Benjamin Knupfer</h1>
             <h3 class="typewrite">Web Development</h3>
         </div>
-            
-            <div class="orbit mercury-orbit"></div>
-            <div class="mercury-spin">
-                <div id="mercury"></div>
+
+        <div class="orbit mercury-orbit"></div>
+        <div class="mercury-spin">
+            <div id="mercury"></div>
+        </div>
+
+        <div class="orbit venus-orbit"></div>
+        <div class="venus-spin">
+            <div id="venus"></div>
+        </div>
+
+        <div class="orbit earth-orbit"></div>
+        <div class="earth-spin">
+            <div id="earth"></div>
+            <div class="orbit moon-orbit"></div>
+            <div class="moon-spin">
+                <div id="moon"></div>
             </div>
-            
-            <div class="orbit venus-orbit"></div>
-            <div class="venus-spin">
-                <div id="venus"></div>
+        </div>
+        <div class="orbit mars-orbit"></div>
+        <div class="mars-spin">
+            <div id="mars"></div>
+        </div>
+
+    </div>
+</section>
+<!--Profil-->
+<section class="profil" id="profil">
+    <div class="textprofil">
+        <h1>Profil</h1>
+        <p>Mein Name ist Benjamin Knupfer,</p>
+        <p>Wilkommen auf meiner Website. Gerne möchte ich Ihnen bei Ihrem Programmierprojekt helfen.
+            Ich studiere momentan Wirtschaftsinformatik an der Berner Fachhochschule.
+            Finden Sie mehr über mich raus.
+            während wir gemeinsam durch unser Sonnensystem reisen.
+        </p>
+    </div>
+    <div class="profilbild">
+        <img src="" alt="Profilbild"/>
+    </div>
+    <div class="containerstars">
+        <canvas class="lightspeed"></canvas>
+    </div>
+</section>
+<!--cv-->
+<section class="cv" id="cv">
+    <h2>CV (Lebenslauf)</h2>
+    <div class="cvcontainer"></div>
+    <div class="timelinecontainer"><!--buttons-->
+        <input type="radio" class="first" id="first" checked>
+        <input type="radio" class="second" id="second">
+        <input type="radio" class="third" id="third">
+        <input type="radio" class="fourth" id="fourth">
+        <input type="radio" class="fifth" id="fifth">
+        <input type="radio" class="sixth" id="sixth">
+        <div class="head2">
+            <ul class="timel">
+                <li class="st1">
+                    <h2 class="inner active">2020-2023</h2>
+                </li>
+                <li class="st2">
+                    <h2 class="inner">2016-2020</h2>
+                </li>
+                <li class="st3">
+                    <h2 class="inner">2012-2016</h2>
+                </li>
+                <li class="st4">
+                    <h2 class="inner">2013</h2>
+                </li>
+                <li class="st5">
+                    <h2 class="inner">2009-2010</h2>
+                </li>
+                <li class="st6">
+                    <h2 class="inner">2005-2009</h2>
+                </li>
+            </ul>
+            <div class="line">
+                <span></span>
             </div>
-            
-            <div class="orbit earth-orbit"></div>
-            <div class="earth-spin">
-                <div id="earth"></div> 
-                <div class="orbit moon-orbit"></div>
-                <div class="moon-spin">
-                    <div id="moon"></div>
-                </div>
+        </div>
+
+        <div class="content">
+            <section class="studium-section">
+                <span></span>
+                <h1>Studium BsC</h1>
+                <p>Studium BSc Wirtschaftsinformatik an der Berner Fachhochschule</p>
+            </section>
+            <section class="asyl-section">
+                <span></span>
+                <h1>Asylkoordinator und Liegenschaftsverantwortlicher</h1>
+                <p>Asylkoordinator:
+                    Liegenschaftsverantwortlicher:
+                </p>
+            </section>
+            <section class="zivi-section">
+                <span></span>
+                <h1>Diverse Zivijobs</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quaerat id aperiam laboriosam eius,
+                    animi
+                    aliquam, necessitatibus voluptates illum quas ducimus repellendus. Provident, magnam reiciendis
+                    minima ex
+                    reprehenderit et doloremque!</p>
+            </section>
+            <section class="receptionist-section">
+                <span></span>
+                <h1>Rezeptionist</h1>
+                <p>Belle Epoque Hotel Victoria Kandersteg ***</p>
+            </section>
+            <section class="client-section">
+                <span></span>
+                <h1>Client Services</h1>
+                <p>Eurocentres Cambridge in Cambridge UK</p>
+            </section>
+            <section class="mpc-section">
+                <span></span>
+                <h1>Diplôme Commercial und Maturité professionel commercial</h1>
+                <p>Maturité professionel commercial - Berufsmaturität in franzosicher Sprache: ESC La Neuveville </p>
+                <p>Diplôme Commercial - Handelsdiplom in französicher Sprache: ESC La Neuveville</p>
+            </section>
+        </div>
+    </div>
+    </div>
+</section>
+<!--portfolio-->
+<section class="portfolio">
+    <h2 id="portfolio">Portfolio und Skills</h2>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas labore nulla itaque fugit! Officia ullam
+        architecto optio deleniti sit blanditiis. Architecto, debitis sint. Fugit voluptate expedita ea nam, dolorem
+        qui?</p>
+    <div class="skillcontainer"><!--quelle:stark adaptiert:https://codepen.io/_niikhil/pen/MWpeqby-->
+        <div class="box">
+            <div class="imgBox">
+                <img src="style/images/Python.svg"
+                     alt="">
             </div>
-            <div class="orbit mars-orbit"></div>
-            <div class="mars-spin">
-                <div id="mars"></div>
+            <div class="skillcontent">
+                <h2>Python</br>
+                    <span>blabla</span>
+                </h2>
             </div>
 
         </div>
-    </section>
-    <!--Profil-->
-    <section class="profil" id="profil">
-        <div class="textprofil">
-            <h1>Profil</h1>
-            <p>Mein Name ist Benjamin Knupfer,</p>
-            <p>Wilkommen auf meiner Website. Gerne möchte ich Ihnen bei Ihrem Programmierprojekt helfen.
-                Ich studiere momentan Wirtschaftsinformatik an der Berner Fachhochschule.
-                Finden Sie mehr über mich raus. 
-                während wir gemeinsam durch unser Sonnensystem reisen.
-            </p>
-        </div>
-        <div class="profilbild">
-                <img src="" alt="Profilbild" />
-        </div>
-        <div class="containerstars">
-            <canvas class="lightspeed"></canvas>
-        </div>
-    </section>
-    <!--cv-->
-    <section class="cv" id="cv">
-        <h2>CV (Lebenslauf)</h2>
-        <div class="cvcontainer"></div>
-            <div class="timelinecontainer"><!--buttons-->
-                <input type="radio" class="first" id="" checked>
-                <input type="radio" class="second"  id="">
-                <input type="radio" class="third"  id="">
-                <input type="radio" class="fourth"  id="">
-                <input type="radio" class="fifth"  id="">
-                <input type="radio" class="sixth" id="">
-                <div class="head2">
-                    <ul class="timel">
-                        <li class="st1 active">
-                            <h2 class="inner">2020-2023</h2>
-                        </li>
-                        <li class="st2">
-                            <h2 class="inner">2016-2020</h2>
-                        </li>
-                        <li class="st3">
-                            <h2 class="inner">2012-2016</h2>
-                        </li>
-                        <li class="st4">
-                            <h2 class="inner">2013</h2>
-                        </li>
-                        <li class="st5">
-                            <h2 class="inner">2009-2010</h2>
-                        </li>
-                        <li class="st6">
-                            <h2 class="inner">2005-2009</h2>
-                        </li>
-                    </ul>
-                    <div class="line">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="content">
-                    <section class="studium-section">
-                    <span></span> 
-                    <h1>Studium BsC</h1>
-                    <p>Studium BSc Wirtschaftsinformatik an der Berner Fachhochschule</p>
-                    </section>
-                    <section class="asyl-section">
-                        <span></span>
-                        <h1>Asylkoordinator und Liegenschaftsverantwortlicher</h1>
-                        <p>Asylkoordinator: 
-                            Liegenschaftsverantwortlicher:
-                        </p>
-                    </section>
-                    <section class="zivi-section">
-                        <span></span>
-                        <h1>Diverse Zivijobs</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quaerat id aperiam laboriosam eius, animi
-                            aliquam, necessitatibus voluptates illum quas ducimus repellendus. Provident, magnam reiciendis minima ex
-                            reprehenderit et doloremque!</p>
-                    </section>
-                    <section class="receptionist-section">
-                        <span></span>
-                        <h1>Rezeptionist</h1>
-                        <p>Belle Epoque Hotel Victoria Kandersteg ***</p>
-                    </section>
-                    <section class="client-section">
-                        <span></span>
-                        <h1>Client Services</h1>
-                        <p>Eurocentres Cambridge in Cambridge UK</p>
-                    </section>
-                    <section class="mpc-section">
-                        <span></span>
-                        <h1>Diplôme Commercial und Maturité professionel commercial</h1>
-                        <p>Maturité professionel commercial - Berufsmaturität in franzosicher Sprache: ESC La Neuveville </p>
-                        <p>Diplôme Commercial - Handelsdiplom in französicher Sprache: ESC La Neuveville</p>
-                    </section>
-                </div>
+</section>
+<section class="kontakt" id="kontakt"><!--id für navigation-->
+    <h2>Kontakt</h2>
+    <p>Ich freue mich auf Ihre Kontaktaufnahme:</p>
+    <div class="bg"></div>
+    <div class="containerform">
+        <form action="https://api.web3forms.com/submit" method="POST"><!--template web3forms angepasst-->
+            <div>
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
             </div>
-        </div>
-    </section>
-    <!--portfolio-->
-    <section class="portfolio">
-        <h2 id="portfolio">Portfolio und Skills</h2>
-        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas labore nulla itaque fugit! Officia ullam architecto optio deleniti sit blanditiis. Architecto, debitis sint. Fugit voluptate expedita ea nam, dolorem qui?</p>
-            <div class="skillcontainer"><!--quelle:stark adaptiert:https://codepen.io/_niikhil/pen/MWpeqby-->
-                <div class="box">
-                    <div class="imgBox">
-                        <img src="style/images/Python.svg"
-                            alt="">
-                    </div>
-                    <div class="skillcontent">
-                        <h2>Python</br>
-                            <span>blabla</span>
-                        </h2>
-                    </div>
-                    
+            Name eingeben
+            <div>
+                <input type="text" name="name" required>
             </div>
-    </section>
-    <section class="kontakt" id="kontakt"><!--id für navigation-->
-        <h2>Kontakt</h2>
-            <p>Ich freue mich auf Ihre Kontaktaufnahme:</p>
-        <div class="bg"></div>
-        <div class="containerform">
-            <form action="https://api.web3forms.com/submit" method="POST"><!--template web3forms angepasst-->       
-                <div>  
-                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-                </div>
-                Name eingeben
-                <div>
-                    <input type="text" name="name" required>
-                </div>
-                E-mail eingeben
-                <div>
-                    <input type="email" name="email" required>
-                </div>
-                Ihre Nachricht:
-                <div class="textbereich">
-                    <textarea name="message" cols="50" rows="10" required></textarea>
-                </div>
-                <div>
-                    <input type="hidden" name="redirect" value="erfolgreich gesendet">
-                </div>
-                <div>
-                    <button type="submit">SENDEN</button><!--disabled bis angebunden-->
-                </div>
-            </form>
-        </div>
-        <div class="containercont">         
-        </div>
-        <div class= "wetter" id="ww_106807fd712c5" v='1.3' loc='id'
-            a='{"t":"responsive","lang":"en","ids":["wl4108"],"font":"Monserrat","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"lightgoldenrodyellow","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","cl_odd":"#00000000"}'>
-            Weather Data Source: <a href="https://wetterlabs.de/wetter_bern/14_tage/" id="ww_106807fd712c5_u"
-                >wetter Bern 14 tage</a>
-        </div> <!--id muss bleiben-->        
-    </section>
-    <!--footer-->
-    <footer class="foot">
-        <p>Look at my work and contact me via:</p>
-        <div class="logofoot">
-            <a href="https://github.com/knupb"><i class="fa fa-github" style="font-size: 50px;"></i></a>
-            <a href="https://gitlab.com/BenjaminKnupfer"><i class="fa fa-gitlab" style="font-size: 50px;"></i></a>
-            <a href="https://www.linkedin.com/in/benjamin-knupfer-579284232/"><i class="fa fa-linkedin-square"
-                    style="font-size: 50px;"></i></a>
-        </div>
-    </footer>
-    <script src="scripts\sidebar.js"></script>
-    <script src="scripts\lightspeed.js"></script>
-    <script async src="https://app1.weatherwidget.org/js/?id=ww_106807fd712c5"></script>
+            E-mail eingeben
+            <div>
+                <input type="email" name="email" required>
+            </div>
+            Ihre Nachricht:
+            <div class="textbereich">
+                <textarea name="message" cols="50" rows="10" required></textarea>
+            </div>
+            <div>
+                <input type="hidden" name="redirect" value="erfolgreich gesendet">
+            </div>
+            <div>
+                <button type="submit">SENDEN</button><!--disabled bis angebunden-->
+            </div>
+        </form>
+    </div>
+    <div class="containercont">
+    </div>
+    <div class="wetter" id="ww_106807fd712c5" v='1.3' loc='id'
+         a='{"t":"responsive","lang":"en","ids":["wl4108"],"font":"Monserrat","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#FFFFFF00","cl_font":"lightgoldenrodyellow","cl_cloud":"#d4d4d4","cl_persp":"#2196F3","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","cl_odd":"#00000000"}'>
+        Weather Data Source: <a href="https://wetterlabs.de/wetter_bern/14_tage/" id="ww_106807fd712c5_u"
+    >wetter Bern 14 tage</a>
+    </div> <!--id muss bleiben-->
+</section>
+<!--footer-->
+<footer class="foot">
+    <p>Look at my work and contact me via:</p>
+    <div class="logofoot">
+        <a href="https://github.com/knupb"><i class="fa fa-github" style="font-size: 50px;"></i></a>
+        <a href="https://gitlab.com/BenjaminKnupfer"><i class="fa fa-gitlab" style="font-size: 50px;"></i></a>
+        <a href="https://www.linkedin.com/in/benjamin-knupfer-579284232/"><i class="fa fa-linkedin-square"
+                                                                             style="font-size: 50px;"></i></a>
+    </div>
+</footer>
+<script>
+    const relevantIds = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth']
+    const elements = []
+    for (let id of relevantIds) {
+        const element = document.getElementById(id)
+        elements.push(element)
+    }
+    const h2elements = document.querySelectorAll('h2.inner')
+    console.log(h2elements)
+    for (let i = 0; i < h2elements.length; i++) {
+        const relevantId = relevantIds[i]
+        const element = h2elements[i]
+        element.relevantId = relevantId
+        element.addEventListener('click', () => {
+            element.classList.toggle('active')
+            h2elements.forEach(el => {
+                if (el !== element) {
+                    el.classList.remove('active')
+                }
+            })
+            const radioButton = document.getElementById(relevantId)
+            radioButton.checked = !radioButton.checked
+            relevantIds.filter(el => el !== relevantId).forEach(el => {
+                document.getElementById(el).checked = false
+            })
+        })
+    }
+</script>
+<script src="scripts\sidebar.js"></script>
+<script src="scripts\lightspeed.js"></script>
+<script async src="https://app1.weatherwidget.org/js/?id=ww_106807fd712c5"></script>
 </body>
 </html>
