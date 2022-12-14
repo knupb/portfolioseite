@@ -178,8 +178,3 @@
         transform: translateY(0px);
     }
 }
-.asyl-section{/*bildertest*/
-        background-image:url("/style/images/mars.png");
-        background-repeat: no-repeat ;
-        background-size: cover;
-}

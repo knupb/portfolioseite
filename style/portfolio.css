@@ -130,9 +130,9 @@
     transform: rotate(360deg);
 }
 /*dbs*/
-.typescript {
+.sqlite{
     margin-top: 2vh;
-    margin-right: 10vw ;
+    margin-left: 80vw;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -143,14 +143,14 @@
     box-shadow: 0px 0px 40px blue;
 }
 
-.typescript:hover {
+.sqlite:hover {
     width: 150px;
     height: 150px;
     transform: rotate(360deg);
 }
-.html {
+.mysql{
     margin-top: 2vh;
-    margin-right: 20vw ;
+    margin-left: 70vw ;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -161,14 +161,14 @@
     box-shadow: 0px 0px 40px orange;
 }
 
-.html:hover {
+.mysql:hover {
     width: 150px;
     height: 150px;
     transform: rotate(360deg);
 }
-.javascript {
+.mongo {
     margin-top: 2vh;
-    margin-right: 10vw ;
+    margin-left: 90vw ;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -179,9 +179,45 @@
     box-shadow: 0px 0px 40px yellow;
 }
 
-.javascript:hover {
+.mongo:hover {
     width: 150px;
     height: 150px;
     transform: rotate(360deg);
 }
 /*frameworks*/
+.django{
+    margin-top: 2vh;
+    margin-left: 70vw ;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("images/html.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: width 1s, height 1s, transform 1s;
+    box-shadow: 0px 0px 40px orange;
+}
+
+.django:hover {
+    width: 150px;
+    height: 150px;
+    transform: rotate(360deg);
+}
+.angular {
+    margin-top: 2vh;
+    margin-left: 90vw ;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("images/js.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: width 1s, height 1s, transform 1s;
+    box-shadow: 0px 0px 40px yellow;
+}
+
+.angular:hover {
+    width: 150px;
+    height: 150px;
+    transform: rotate(360deg);
+}
