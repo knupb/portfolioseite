@@ -21,19 +21,7 @@ html, body{
 
 body{
     font-family: 'Montserrat';/*font in ' einfügen*/
-    background-color: black;
+    background-color: black;/*background gesamter body*/
 }
 
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-    text-align: center;
-    background-color: black;
-}
-
-footer{
-    align-items: center;
-    text-align: center;
-}
 

@@ -1,4 +1,5 @@
  .kontakt {
+  display: flex;
   position: relative;
   color: white;/*make text visible*/
    /*added animations to contact, to be extended*/
@@ -11,7 +12,6 @@
    justify-items: center;
    background-position: 0,
      0;
-
    background-size: 10vmax,
      20vmax;
    animation: 14s move linear infinite;
@@ -33,8 +33,11 @@
    }
  }
 
-.kontakt h2,p{
+.kontakttext h2,p{
+  display: flex;
+  justify-content: center;
   text-align: center;
+  position: relative;
 }
  
 .containerform{/*whole form*/
@@ -55,17 +58,28 @@
   text-decoration: none;
 
 }
+
+.containerform textarea{
+  background-color: transparent;
+  color: aliceblue;
+}
 /*quelle bounce*/
 .containerform button{
-  background-color: transparent;
+  height: 10vh;
+  width: 10vw;
+  background-image: url("/style/images/mond.png");
+  background-size: cover;
+  box-shadow:0 0 30px #f5eec9;
   animation: bouncy 4s infinite linear;
   position: relative;
   text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  color: #B82301;
-  border-radius: 5%;
+  text-align:center;
+  color:whitesmoke;  
+  border-radius: 50%;
+  background-color: black;
+
 } 
+
 
 @keyframes bouncy {
   0%{top:0em}
@@ -76,12 +90,9 @@
   50%{top:0em}
   100%{top:0em;}
 }
-.wetter{
-  display: flex;
-  align-items: center;
-  position: relative;
-  contain: content;
-}
+
+
+/*Footer*/
 .foot .logofoot{
   display: flex;
   justify-content: center;
