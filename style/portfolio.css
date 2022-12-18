@@ -136,9 +136,11 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-image: url("images/typescript.png");
+    background-image: url("images/SQLite.png");
+    background-color: azure;
     background-repeat: no-repeat;
     background-size: cover;
+    background-size: contain;
     transition: width 1s, height 1s, transform 1s;
     box-shadow: 0px 0px 40px blue;
 }
@@ -154,11 +156,12 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-image: url("images/html.png");
+    background-image: url("images/MySQL.png");
+    background-color: azure;
     background-repeat: no-repeat;
     background-size: contain;
     transition: width 1s, height 1s, transform 1s;
-    box-shadow: 0px 0px 40px orange;
+    box-shadow: 0px 0px 40px blue;
 }
 
 .mysql:hover {
@@ -172,11 +175,13 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-image: url("images/js.png");
+    background-image: url("images/mongo.png");
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
+    background-color: greenyellow;
     transition: width 1s, height 1s, transform 1s;
-    box-shadow: 0px 0px 40px yellow;
+    box-shadow: 0px 0px 40px greenyellow;
 }
 
 .mongo:hover {
@@ -191,7 +196,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-image: url("images/html.png");
+    background-image: url("images/django.png");
     background-repeat: no-repeat;
     background-size: contain;
     transition: width 1s, height 1s, transform 1s;
@@ -209,7 +214,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-image: url("images/js.png");
+    background-image: url("images/angular.png");
     background-repeat: no-repeat;
     background-size: contain;
     transition: width 1s, height 1s, transform 1s;
