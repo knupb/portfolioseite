@@ -1,5 +1,6 @@
  .kontakt {
-  display: flex;
+
+  text-align: center;
   position: relative;
   color: white;/*make text visible*/
    /*added animations to contact, to be extended*/
@@ -33,9 +34,7 @@
    }
  }
 
-.kontakttext h2,p{
-  display: flex;
-  justify-content: center;
+.kontakttext {
   text-align: center;
   position: relative;
 }
@@ -65,8 +64,8 @@
 }
 /*quelle bounce*/
 .containerform button{
-  height: 15vh;
-  width: 10vw;
+  height: 70px;
+  width: 70px;
   background-image: url("/style/images/mond.png");
   background-size: cover;
   box-shadow:0 0 30px #f5eec9;

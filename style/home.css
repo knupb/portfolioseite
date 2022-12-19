@@ -31,11 +31,8 @@
     /* Gives that scrolling effect as the typing happens */
     letter-spacing: .01em;
     /* Adjust as needed */
-    animation:
-        typing 3s steps(100, end),
-        blink-caret 2s;
+    animation:typing 3s steps(100, end);
 }
-
 
 /* The typing effect */
 @keyframes typing {
