@@ -61,6 +61,7 @@
 .containerform textarea{
   background-color: transparent;
   color: aliceblue;
+  height: 80%;
 }
 /*quelle bounce*/
 .containerform button{
@@ -91,11 +92,14 @@
 
 
 /*Footer*/
+footer{
+  bottom:0px;
+
+}
 .foot .logofoot{
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; 
 }
 .foot p{/*text footer*/
     background: -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09,#f5eec9);/*Farbspektrum*/

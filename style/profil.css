@@ -5,7 +5,6 @@
     z-index: 1;
 }
 .profil{/*css animation own work for EWEB https: //github.com/knupb */
-    box-sizing: border-box;
     position: relative;
     z-index: 2;
     overflow: hidden;
@@ -43,7 +42,6 @@
 }
 .textprofil{
     position:absolute;
-    justify-content: center;
     text-align: center;
     padding-top: 20%;
     padding-right:100px;

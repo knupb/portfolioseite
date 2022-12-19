@@ -7,9 +7,7 @@
         url('images/mond.png'),
         url('images/erde.png');
     background-repeat: no-repeat;
-    background-position:
-        0;
-
+    background-position: 0;
     background-size:
         10vmax,
         20vmax;
@@ -37,7 +35,7 @@
 
 .python {
     margin-top: 1%;
-    margin-left: 3%;
+    margin-left: 30%;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -60,13 +58,13 @@
     text-align: center;
 }
 .python:hover + .textp{
-    display:grid;
+    display:block;
     color: aliceblue;
 }
 
 .typescript {
     margin-top: 1%;
-    margin-left: 3%;
+    margin-left: 60%;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -80,7 +78,7 @@
 .typescript:hover {
     width: 150px;
     height: 150px;
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
 }
 .textts {
     display: none;
@@ -93,7 +91,7 @@
 
 .html {
     margin-top: 1%;
-    margin-left: 3%;
+    margin-left: 30%;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -121,7 +119,7 @@
 }
 .javascript {
     margin-top: 1%;
-    margin-left: 3%;
+    margin-left: 60%;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -135,11 +133,11 @@
 .javascript:hover {
     width: 150px;
     height: 150px;
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
 }
 .sql {
     margin-top: 1%;
-    margin-left: 3%;
+    margin-left: 30%;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -159,7 +157,8 @@
 }
 /*dbs*/
 .sqlite{
-    margin-left: 3%;
+    margin-top: 1%;
+    margin-left: 60%;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -175,10 +174,11 @@
 .sqlite:hover {
     width: 150px;
     height: 150px;
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
 }
 .mysql{
-    margin-left: 3%;
+    margin-top: 1%;
+    margin-left: 30%;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -196,7 +196,8 @@
     transform: rotate(360deg);
 }
 .mongo {
-    margin-left: 3%;
+    margin-top: 1%;
+    margin-left: 60%;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -212,11 +213,12 @@
 .mongo:hover {
     width: 150px;
     height: 150px;
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
 }
 /*frameworks*/
 .django{
-    margin-left: 3%;
+    margin-top: 1%;
+    margin-left: 30%;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -234,7 +236,8 @@
     transform: rotate(360deg) ;
 }
 .angular {
-    margin-left: 3%;
+    margin-top: 1%;
+    margin-left: 60%;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -249,5 +252,26 @@
 .angular:hover {
     width: 150px;
     height: 150px;
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
+}
+progress {
+  border-radius: 7px; 
+  height: 10px;
+  background: white;
+}
+progress::-webkit-progress-bar {
+  border-radius: 7px; 
+  height: 10px;
+  background: white;
+}
+progress::-webkit-progress-value {
+  border-radius: 7px; 
+  height: 10px;
+  background: red;
+  color:aliceblue;
+}
+progress::-moz-progress-bar {
+  border-radius: 7px; 
+  height: 10px;
+  background: red;
 }
