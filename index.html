@@ -23,7 +23,7 @@
     <a href="#home">Home</a>
     <a href="#profil">Profil</a>
     <a href="#cv">CV</a>
-    <a href="#portfolio">Portfolio</a>
+    <a href="#skills">Skills</a>
     <a href="#kontakt">Kontakt</a>
 </div>
 <!--Home-->
@@ -151,9 +151,9 @@
     </div>
 </section>
 <!--portfolio-->
-<section class="portfolio">
-    <h2 id="portfolio">Portfolio und Skills</h2>
-        <div class="sprachen">Sprachen</div>
+<section class="skills">
+    <h2 id="skills">Skills</h2>
+        <div class="sprachen">Programmiersprachen</div>
         <div class="python" ></div>
         <div class="textp">
             <h2>Python</h2>
@@ -180,18 +180,65 @@
             <progress id="file" value="90" max="100"></progress>
         </div>
         <div class="javascript"></div>
-        
+        <div class="textjs">
+            <h2>Javascript</h2>
+            <p>Auch für Webdesign aber nicht meine Stärke</p>
+            <label for="skill">Skillevel: 40%</label>
+            <br>
+            <progress id="file" value="40" max="100"></progress>
+        </div>
         <div class="sql"></div>
+        <div class="textsql">
+            <h2>SQL</h2>
+            <p>Toll für simple Datenmanipulation</p>
+            <label for="skill">Skillevel: 70%</label>
+            <br>
+            <progress id="file" value="70" max="100"></progress>
+        </div>
     </div>
     <!--databases-->
     <div class="db">Datenbanken</div>
         <div class="sqlite"></div>
+        <div class="textsqlite">
+            <h2>SQLite</h2>
+            <p>Einfach eine Super Datenbank</p>
+            <label for="skill">Skillevel: 90%</label>
+            <br>
+            <progress id="file" value="90" max="100"></progress>
+        </div>
         <div class="mysql"></div>
+        <div class="textmysql">
+            <h2>MySQL</h2>
+            <p>Eine andere gute Datenbank</p>
+            <label for="skill">Skillevel: 70%</label>
+            <br>
+            <progress id="file" value="70" max="100"></progress>
+        </div>
         <div class="mongo"></div>
-
+        <div class="textmongo">
+            <h2>MongoDB</h2>
+            <p>Wenn es eine andere Datenbank braucht</p>
+            <label for="skill">Skillevel: 60%</label>
+            <br>
+            <progress id="file" value="60" max="100"></progress>
+        </div>
     <div class="frameworks">Frameworks</div>
         <div class="django"></div>
+        <div class="textdjango">
+            <h2>Django</h2>
+            <p>Wenn man mal einfach eine Webapp machen will</p>
+            <label for="skill">Skillevel: 90%</label>
+            <br>
+            <progress id="file" value="90" max="100"></progress>
+        </div>
         <div class="angular"></div>
+        <div class="textangular">
+            <h2>Angular</h2>
+            <p>Wenn man mal kompliziert eine modernere Webapp machen will</p>
+            <label for="skill">Skillevel: 70%</label>
+            <br>
+            <progress id="file" value="70" max="100"></progress>
+        </div>
 
 </section>
 <section class="kontakt" id="kontakt"><!--id für navigation-->
@@ -225,6 +272,13 @@
             </div>
         </form>
     </div>
+    <h3>Wetter auf dem Heimatplaneten:</h3>
+    <!--Quelle:https://weatherwidget.org/de/-->
+    <div id="ww_53c8c87eeaf09" v='1.3' loc='id'
+        a='{"t":"ticker","lang":"de","sl_lpl":1,"ids":["wl4108"],"font":"Monserrat","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"none","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>
+        Weather Data Source: <a href="https://wetterlabs.de/wetter_bern/5_tage/" id="ww_53c8c87eeaf09_u"
+            target="_blank">wettervorhersage Bern 5 tage</a></div>
+    <script async src="https://app1.weatherwidget.org/js/?id=ww_53c8c87eeaf09"></script>
 </section>
 <!--footer-->
 <footer class="foot">

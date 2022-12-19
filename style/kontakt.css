@@ -4,7 +4,7 @@
   position: relative;
   color: white;/*make text visible*/
    /*added animations to contact, to be extended*/
-   height: 100vh;/*footer soll sichtbar sein*/
+   height: 90vh;/*footer soll sichtbar sein*/
    width: 100vw;
    background-color: black;
    background-image: url('images/erde.png'),
@@ -59,15 +59,12 @@
 }
 
 .containerform textarea{
-  height: 80%;
+  height: 400px;
+  width: 80%;
   background-color: transparent;
   color: aliceblue;
 }
-.containerform textarea{
-  height: 550px;
-  background-color: transparent;
-  color: aliceblue;
-}
+
 /*quelle bounce*/
 .containerform button{
   height: 70px;

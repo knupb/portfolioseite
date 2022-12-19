@@ -1,7 +1,8 @@
-.portfolio {
+.skills {
     /*css animation own work for EWEB https: //github.com/knupb */
-    height: 100vh;
+    height: 100vh;/*fit all*/
     width: 100vw;
+    overflow:auto;/*not cutting bottom element*/
     background-color: rgba(3, 3, 3, 0.4);
     background-image:
         url('images/mond.png'),
@@ -27,7 +28,7 @@
             +135%;
     }
 }
-.portfolio {
+.skills {
     text-align: center;
     color: aliceblue;
 
@@ -135,6 +136,14 @@
     height: 150px;
     transform: rotate(-360deg);
 }
+.textjs {
+    display: none;
+    text-align: center;
+}
+.javascript:hover + .textjs{
+    display: block;
+    color: aliceblue;
+}
 .sql {
     margin-top: 1%;
     margin-left: 30%;
@@ -149,11 +158,18 @@
     transition: width 1s, height 1s, transform 1s;
     box-shadow: 0px 0px 40px orange;
 }
-
 .sql:hover {
     width: 150px;
     height: 150px;
     transform: rotate(360deg);
+}
+.textsql {
+    display: none;
+    text-align: center;
+}
+.sql:hover + .textsql{
+    display: block;
+    color: aliceblue;
 }
 /*dbs*/
 .sqlite{
@@ -167,6 +183,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-size: contain;
+    background-position: center;
     transition: width 1s, height 1s, transform 1s;
     box-shadow: 0px 0px 40px blue;
 }
@@ -175,6 +192,14 @@
     width: 150px;
     height: 150px;
     transform: rotate(-360deg);
+}
+.textsqlite {
+    display: none;
+    text-align: center;
+}
+.sqlite:hover + .textsqlite{
+    display: block;
+    color: aliceblue;
 }
 .mysql{
     margin-top: 1%;
@@ -186,6 +211,7 @@
     background-color: azure;
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
     transition: width 1s, height 1s, transform 1s;
     box-shadow: 0px 0px 40px blue;
 }
@@ -194,6 +220,14 @@
     width: 150px;
     height: 150px;
     transform: rotate(360deg);
+}
+.textmysql {
+    display: none;
+    text-align: center;
+}
+.mysql:hover + .textmysql{
+    display: block;
+    color: aliceblue;
 }
 .mongo {
     margin-top: 1%;
@@ -215,6 +249,15 @@
     height: 150px;
     transform: rotate(-360deg);
 }
+.textmongo {
+    display: none;
+    text-align: center;
+}
+.mongo:hover + .textmongo{
+    display: block;
+    color: aliceblue;
+}
+
 /*frameworks*/
 .django{
     margin-top: 1%;
@@ -225,6 +268,7 @@
     background-image: url("images/django.png");
     background-color: green;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
     transition: width 1s, height 1s, transform 1s;
     box-shadow: 0px 0px 40px green;
@@ -234,6 +278,14 @@
     width: 150px;
     height: 150px;
     transform: rotate(360deg) ;
+}
+.textdjango {
+    display: none;
+    text-align: center;
+}
+.django:hover + .textdjango{
+    display: block;
+    color: aliceblue;
 }
 .angular {
     margin-top: 1%;
@@ -253,6 +305,14 @@
     width: 150px;
     height: 150px;
     transform: rotate(-360deg);
+}
+.textangular {
+    display: none;
+    text-align: center;
+}
+.angular:hover + .textangular{
+    display: block;
+    color: aliceblue;
 }
 progress {
   border-radius: 7px; 
