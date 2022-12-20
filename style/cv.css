@@ -149,8 +149,11 @@
 }
 @media screen and (max-width:600px){
     .timel h2{
-        font-size: x-small;/*jahreszahlen*/
+        font-size: x-small;/*years*/
         
+    }
+    .content{
+        font-size: small;/*small on small screens*/
     }
 }
 

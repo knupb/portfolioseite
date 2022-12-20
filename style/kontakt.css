@@ -53,16 +53,22 @@
   color: white;
   width: 50%;
   text-align: center;
-  border-radius: 5%;
+  border-radius: 10px;
   text-decoration: none;
-
+  border: solid 1px;/*small border without 3d*/
+  margin: 2%;/*text*/
+  font-family: 'Montserrat';
 }
 
 .containerform textarea{
   height: 400px;
   width: 80%;
+  margin: 2%;/*text*/
   background-color: transparent;
   color: aliceblue;
+  font-family: 'Montserrat';
+  text-align: center;/*centered in textarea*/
+  border-radius: 10px;
 }
 
 /*quelle bounce*/
@@ -76,7 +82,8 @@
   position: relative;
   text-decoration: none;
   text-align:center;
-  color:whitesmoke;  
+  color:black;
+  font-weight: bolder;  
   border-radius: 50%;
   background-color: black;
 } 
