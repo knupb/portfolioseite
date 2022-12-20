@@ -121,7 +121,7 @@
 }
 .content section p{
     text-align: center;
-    padding: 30px 40px ;
+    padding: 40px 40px ;
 }
 
 .studium-section,
@@ -147,5 +147,10 @@
     transform: scale(1);
     transform-origin: bottom;
 }
-
+@media screen and (max-width:600px){
+    .timel h2{
+        font-size: x-small;/*jahreszahlen*/
+        
+    }
+}
 

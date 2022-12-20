@@ -43,12 +43,23 @@
 .textprofil{
     position:absolute;
     text-align: center;
-    padding-top: 20%;
     padding-right:100px;
-    margin-top: 10vw;
-    margin-left: 40vw;
+    margin-top: 20vw;
+    margin-left: 20vw;
     margin-right:10vw;/*nicht rand der seit*/
 }
+@media screen and (max-width:600px){
+    .textprofil{
+        position:absolute;
+        text-align: center;
+        padding-right:100px;
+        margin-top: 20vw;
+        margin-left: 20vw;
+        margin-right:10vw;
+        padding-top: 25%;
+    }
+}
+
 .profilbild {/*adapted fromcodepen.io/MarioDesigns/ */
     position: absolute;
     margin-top: 10vw;/*sonst aus section*/

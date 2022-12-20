@@ -37,8 +37,8 @@
 .python {
     margin-top: 1%;
     margin-left: 30%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: azure;
     background-image: url("images/python.png");
@@ -49,8 +49,8 @@
 }
 
 .python:hover {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     transform: rotate(360deg);
 
 }
@@ -66,8 +66,8 @@
 .typescript {
     margin-top: 1%;
     margin-left: 60%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-image: url("images/typescript.png");
     background-repeat: no-repeat;
@@ -77,8 +77,8 @@
 }
 
 .typescript:hover {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     transform: rotate(-360deg);
 }
 .textts {
@@ -93,8 +93,8 @@
 .html {
     margin-top: 1%;
     margin-left: 30%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-image: url("images/html.png");
     background-repeat: no-repeat;
@@ -106,8 +106,8 @@
 }
 
 .html:hover {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     transform: rotate(360deg);
 }
 .texthtml {
@@ -121,8 +121,8 @@
 .javascript {
     margin-top: 1%;
     margin-left: 60%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-image: url("images/js.png");
     background-repeat: no-repeat;
@@ -132,8 +132,8 @@
 }
 
 .javascript:hover {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     transform: rotate(-360deg);
 }
 .textjs {
@@ -147,8 +147,8 @@
 .sql {
     margin-top: 1%;
     margin-left: 30%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-image: url("images/sql.png");
     background-color: aliceblue;
@@ -159,8 +159,8 @@
     box-shadow: 0px 0px 40px orange;
 }
 .sql:hover {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     transform: rotate(360deg);
 }
 .textsql {
@@ -175,8 +175,8 @@
 .sqlite{
     margin-top: 1%;
     margin-left: 60%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-image: url("images/SQLite.png");
     background-color: azure;
@@ -189,8 +189,8 @@
 }
 
 .sqlite:hover {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     transform: rotate(-360deg);
 }
 .textsqlite {
@@ -204,8 +204,8 @@
 .mysql{
     margin-top: 1%;
     margin-left: 30%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-image: url("images/MySQL.png");
     background-color: azure;
@@ -217,8 +217,8 @@
 }
 
 .mysql:hover {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     transform: rotate(360deg);
 }
 .textmysql {
@@ -232,8 +232,8 @@
 .mongo {
     margin-top: 1%;
     margin-left: 60%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-image: url("images/mongo.png");
     background-repeat: no-repeat;
@@ -245,8 +245,8 @@
 }
 
 .mongo:hover {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     transform: rotate(-360deg);
 }
 .textmongo {
@@ -262,8 +262,8 @@
 .django{
     margin-top: 1%;
     margin-left: 30%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-image: url("images/django.png");
     background-color: green;
@@ -275,8 +275,8 @@
 }
 
 .django:hover {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     transform: rotate(360deg) ;
 }
 .textdjango {
@@ -290,8 +290,8 @@
 .angular {
     margin-top: 1%;
     margin-left: 60%;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-image: url("images/angular.png");
     background-color: #2775CA;
@@ -302,8 +302,8 @@
 }
 
 .angular:hover {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     transform: rotate(-360deg);
 }
 .textangular {
@@ -334,4 +334,31 @@ progress::-moz-progress-bar {
   border-radius: 7px; 
   height: 10px;
   background: red;
+}
+@media screen and (max-width:600px){
+
+    .skills h2,p,label{
+        font-size: smaller;
+    }
+    progress {
+        border-radius: 3.5px; 
+        height: 5px;
+        background: white;
+}
+    progress::-webkit-progress-bar {
+        border-radius: 3.5px; 
+        height: 5px;
+        background: white;
+}
+    progress::-webkit-progress-value {
+        border-radius: 3.5px; 
+        height: 5px;
+        background: red;
+        color:aliceblue;
+}
+    progress::-moz-progress-bar {
+        border-radius: 3.5px; 
+        height: 5px;
+        background: red;
+}
 }
