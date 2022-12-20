@@ -31,7 +31,20 @@
 .skills {
     text-align: center;
     color: aliceblue;
+}
+.skills h1{/* Quelle:w3 Schools glowing text, rest zusammengesucht meist bei w3schools diverse Quellen*/
+    text-align: center;
+    color: aliceblue;
+    animation: glow 1s ease-in-out infinite alternate;
+}
 
+@keyframes glow {
+  from {
+    text-shadow: 0 0 2px #fff, 0 0 4px rgb(210, 208, 208), 0 0 5px azureblue, 0 0 10px #a19d9f;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 7px azure, 0 0 10px #fff04d, 0 0 15px #fff04d, 0 0 20px #fff04d;
+  }
 }
 
 .python {

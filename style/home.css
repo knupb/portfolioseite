@@ -143,6 +143,7 @@
     width: 40px;
     background-image: url("images/venus.png");/*Quelle:Nasa Vektorisiert eigene Arbeit*/
     background-size: cover;
+
     box-shadow: 0 0 34px #3a4385;
 }
 

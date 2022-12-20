@@ -20,8 +20,8 @@
         0;
     mix-blend-mode: lighten;
     background-size:
-        5vw,
-        20vw;
+        5vmax,
+        20vmax;
     animation: 14s move linear infinite;/*best background animation timing*/
 }
 
@@ -44,7 +44,7 @@
     position:absolute;
     text-align: center;
     padding-right:100px;
-    margin-top: 20vw;
+    margin-top: 25vh;
     margin-left: 20vw;
     margin-right:10vw;/*nicht rand der seit*/
 }
@@ -62,7 +62,7 @@
 
 .profilbild {/*adapted fromcodepen.io/MarioDesigns/ */
     position: absolute;
-    margin-top: 10vw;/*sonst aus section*/
+    margin-top: 10vh;/*sonst aus section*/
     margin-left: 20vw;
     width: 150px;
     height: 150px;
@@ -95,3 +95,22 @@
         transform: translatey(0px);
     }
 }
+.box {/*animation nach Quelle:https://codepen.io/josue_26/pen/dojbOG*/
+  background:url("/style/images/weltkarte.jpg");/*public domain quelle:https://www.shadedrelief.com/natural3/pages/textures.html*/
+  background-size:cover;
+  border:2px solid #000;
+  border-radius:50%;
+  width:100px;
+  height:100px;
+  animation: move 6.9s linear 0s infinite;
+  margin-top: 75vh;
+  margin-left: 45vw;
+  transform:rotateX(6deg) rotateY(6deg) rotateZ(6deg);
+  box-shadow: 0px 0px 40px #2775CA;
+}
+
+@keyframes move{
+  0% { background-position:0 0 }
+  100% { background-position:355px 0 }
+}
+
