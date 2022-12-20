@@ -65,7 +65,7 @@
   width: 80%;
   margin: 2%;/*text*/
   background-color: transparent;
-  color: aliceblue;
+  color: white;
   font-family: 'Montserrat';
   text-align: center;/*centered in textarea*/
   border-radius: 10px;
@@ -75,7 +75,7 @@
 .containerform button{
   height: 70px;
   width: 70px;
-  background-image: url("/style/images/mond.png");
+  background-image: url("images/mond.png");
   background-size: cover;
   box-shadow:0 0 30px #f5eec9;
   animation: bouncy 4s infinite linear;

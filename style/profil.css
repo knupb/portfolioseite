@@ -101,7 +101,7 @@
 
 .box {/*animation nach Quelle:https://codepen.io/josue_26/pen/dojbOG*/
   position:absolute;
-  background:url("/style/images/weltkarte.jpg");/*public domain quelle:https://www.shadedrelief.com/natural3/pages/textures.html*/
+  background:url("images/weltkarte.jpg");/*public domain quelle:https://www.shadedrelief.com/natural3/pages/textures.html*/
   background-size:cover;
   border-radius:50%;
   width:100px;
