@@ -1,6 +1,6 @@
 .skills {
     /*css animation own work for EWEB https: //github.com/knupb */
-    height: 100vh;/*fit all*/
+    height: 100%;/*fit all*/
     width: 100vw;
     overflow:auto;/*not cutting bottom element*/
     background-color: rgba(3, 3, 3, 0.4);
