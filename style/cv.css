@@ -10,37 +10,23 @@
         url('images/sonne2.png');
     background-repeat: no-repeat;
     justify-items: center;
-    background-position:
-        0,
-        0;
-
-    background-size:
-        10vmax,/*venus*/
-        20vmax;/*sun*/
+    background-position:0,0;
+    background-size:10vmax,/*venus*/20vmax;/*sun*/
     animation: 14s move linear infinite;
     /*best background animation timing*/
 }
 
 @keyframes move {
     0% {
-        background-position:
-            -45%,
-            -39%,
-            -39%;
+        background-position:-39%,-39%;
     }
 
     /*favoured rate for animation through tests own work*/
     100% {
-        background-position:
-            +120%,
-            +135%,
-            /*verhalten merkur*/
-            +135%;
+        background-position:+135%,+135%;
     }
 }
-.first{
-    background-image: url("images/erde.png");
-}
+
 .cvcontainer{
     padding: 0;
     margin: 0;
@@ -86,8 +72,8 @@
 .timel li ::before{
     content: '';
     width:25px;
-    height: 25px;/*grösse Kreise*/
-    border: solid #aaa;/*color Kreise*/
+    height: 25px;/*big circle*/
+    border: solid #aaa;/*color circle*/
     border-radius: 50%;
     margin: auto;
     display: block;
@@ -107,7 +93,6 @@
     display: flex;
     justify-content: center;
     animation: anim .7s linear forwards;
-
 }
 .content section{
     width: 70%;
@@ -118,6 +103,7 @@
     font-weight: 900;
     margin-top: 10px;
     text-align: center;
+    padding: 40px 40px;
 }
 .content section p{
     text-align: center;
@@ -147,6 +133,7 @@
     transform: scale(1);
     transform-origin: bottom;
 }
+
 @media screen and (max-width:600px){
     .timel h2{
         font-size: x-small;/*years*/

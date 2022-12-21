@@ -10,10 +10,8 @@
      url('images/sonne2.png');
    background-repeat: no-repeat;
    justify-items: center;
-   background-position: 0,
-     0;
-   background-size: 10vmax,
-     20vmax;
+   background-position: 0,0;
+   background-size: 10vmax, 20vmax;
    animation: 14s move linear infinite;
    /*best background animation timing*/
  }
@@ -67,27 +65,27 @@
   color: white;
   font-family: 'Montserrat';
   text-align: center;/*centered in textarea*/
+  border: solid 1px;
   border-radius: 10px;
 }
 
-/*quelle bounce*/
 .containerform button{
   height: 70px;
   width: 70px;
   background-image: url("images/mond.png");
   background-size: cover;
   box-shadow:0 0 30px #f5eec9;
-  animation: bouncy 4s infinite linear;
+  animation: bouncy 3s infinite linear;
   position: relative;
   text-decoration: none;
   text-align:center;
-  color:black;
   font-weight: bolder;  
   border-radius: 50%;
-  background-color: black;
+  cursor: pointer;
+
 } 
 
-
+/*source Bounce effect:https://cssbuttons.app/buttons/13 adapted*/
 @keyframes bouncy {
   0%{top:0em}
   40%{top:0em}
@@ -110,7 +108,7 @@ footer{
   align-items: center;
 }
 .foot p{/*text footer*/
-    background: -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09,#f5eec9);/*Farbspektrum*/
+    background: -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09,#f5eec9);/*colour spectrum*/
     background-clip: initial;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -120,7 +118,7 @@ footer{
     position: relative; 
 }
 .logofoot {/*logo footer*/
-    background: -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09,#f5eec9);/*Farbspektrum*/
+    background: -webkit-linear-gradient(#B82301, #EF4E08, #FEDA09,#f5eec9);/*colour spectrum*/
     background-clip: initial;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; /*textcolor footer*/

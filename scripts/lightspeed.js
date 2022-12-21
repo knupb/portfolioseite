@@ -1,4 +1,4 @@
-
+//Source changed and adapted:https://codepen.io/thebmoman/details/abqZErZ
 const STAR_COUNT = (window.innerWidth + window.innerHeight) / 8; //recommended star count
 const THRESHOLD = 50;
 

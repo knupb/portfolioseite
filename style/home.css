@@ -2,7 +2,7 @@
     display:flex;
     justify-content: center;
     background-image: url("images/stars.png");
-    /*Quelle Nasa https: //www.nasa.gov/feature/goddard/2018/hubble-paints-picture-of-the-evolving-universe/*/
+    /*Image Source Nasa https: //www.nasa.gov/feature/goddard/2018/hubble-paints-picture-of-the-evolving-universe/*/
     background-repeat: no-repeat;
     background-size: cover;
     place-items: center;
@@ -11,7 +11,7 @@
 
 }
 .welcome{
-    font-size: x-large;/*grosse Schrift*/
+    font-size: x-large;/*large text*/
     place-content: center;
 }
 .typewrite {
@@ -20,8 +20,9 @@
     place-content: center;
     justify-content: center;
     overflow: hidden;
-    background: linear-gradient(#B82301, #EF4E08, #FEDA09, #f6e99f);/*fix problem with resizing on other browsers and github deployment*/
-    /*macht linear gradient verschiedene farben*/
+    background: linear-gradient(#B82301, #EF4E08, #FEDA09, #f6e99f);
+    /*fix problem with resizing on other browsers and github deployment*/
+    /* linear gradient different colours*/
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /* Ensures the content is not revealed until the animation */
@@ -49,7 +50,6 @@
     height: 400px;
     place-content: center;
     position: relative;
-    /*mix-blend-mode: exclusion;/*macht transparent gegenüber hintergrund*/
 }
 
 
@@ -83,7 +83,7 @@
 
 #sun {
 
-    background-image: url("images/sonne2.png");/*Quelle:Nasa Vektorisiert eigene Arbeit*/
+    background-image: url("images/sonne2.png");/*Source:Nasa vectorised*/
     background-size:cover;
     height: 200px;
     width: 200px;
@@ -103,7 +103,7 @@
     margin-left: -25px;
     margin-top: -25px;
     border-radius: 50%;
-    background-image: url("images/erde.png");/*Quelle:Nasa Vektorisiert eigene Arbeit*/
+    background-image: url("images/erde.png");/*Source:Nasa vectorised*/
     background-size: cover;
     box-shadow: 0 0 34px #3a4385;
 }
@@ -122,7 +122,7 @@
     height: 12px;
     width: 12px;
     border-radius: 50%;
-    background-image: url("images/mond.png");/*Quelle:Nasa Vektorisiert eigene Arbeit*/
+    background-image: url("images/mond.png");/*Source:Nasa vectorised*/
     background-size: cover;
     box-shadow:0 0 10px #3a4385;
 }
@@ -141,7 +141,7 @@
     margin-left: -20px;
     height: 40px;
     width: 40px;
-    background-image: url("images/venus.png");/*Quelle:Nasa Vektorisiert eigene Arbeit*/
+    background-image: url("images/venus.png");/*Source:Nasa vectorised*/
     background-size: cover;
 
     box-shadow: 0 0 34px #3a4385;
@@ -160,7 +160,7 @@
     margin-left: -13.5px;
     height: 25px;
     width: 25px;
-    background-image: url('images/merkur.png');/*Quelle:Nasa Vektorisiert eigene Arbeit*/
+    background-image: url('images/merkur.png');/*Source:Nasa vectorised*/
     background-size: cover;
     box-shadow:0 0 20px #3a4385;
 }
@@ -178,7 +178,7 @@
     margin-left: -16px;
     height: 32px;
     width: 32px;
-    background-image: url("images/mars.png");/*Quelle:Nasa Vektorisiert eigene Arbeit*/
+    background-image: url("images/mars.png");/*Source:Nasa vectorised*/
     background-size: cover;
     background-color: #863222;
     box-shadow: 0 0 14px #a64232;

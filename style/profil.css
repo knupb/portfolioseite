@@ -16,25 +16,21 @@
         url('images/sonne2.png');
     background-repeat: no-repeat;
     background-position:
-        0,
-        0;
+        0,0;
     mix-blend-mode: lighten;
     background-size:
-        5vmax,
-        20vmax;
+        5vmax,20vmax;/*still big sized on mediascreen*/
     animation: 14s move linear infinite;/*best background animation timing*/
 }
 
 @keyframes move{
     0%{
         background-position: 
-        -39%,
-        -39%;
+        -39%,-39%;
     }/*favoured rate for animation through tests own work*/
     100% {
         background-position:
-            +135%,/*verhalten merkur*/
-            +135%;
+            +135%,+135%;
     }
 }
 #profil{
@@ -81,7 +77,7 @@
     padding-right:100px;
     margin-top: 25vh;
     margin-left: 20vw;
-    margin-right:10vw;/*nicht rand der seit*/
+    margin-right:10vw;
 }
 @media screen and (max-width:600px){
     .textprofil{
@@ -96,18 +92,19 @@
     .box{
         margin-left: 20vw;
         margin-top: 80vh;
+        opacity: 95%;
     }
 }
 
-.box {/*animation nach Quelle:https://codepen.io/josue_26/pen/dojbOG*/
+.box {/*animation source:https://codepen.io/josue_26/pen/dojbOG*/
   position:absolute;
-  background:url("images/weltkarte.jpg");/*public domain quelle:https://www.shadedrelief.com/natural3/pages/textures.html*/
+  background:url("images/weltkarte.jpg");/*public domain image source:https://www.shadedrelief.com/natural3/pages/textures.html*/
   background-size:cover;
   border-radius:50%;
   width:100px;
   height:100px;
   animation: move 6.9s linear 0s infinite;
-  margin-top: 75vh;
+  margin-top: 80vh;
   margin-left: 50vw;
   transform:rotateX(6deg) rotateY(6deg) rotateZ(6deg);
   box-shadow: 0px 0px 40px #2775CA;

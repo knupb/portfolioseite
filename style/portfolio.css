@@ -4,14 +4,10 @@
     width: 100vw;
     overflow:auto;/*not cutting bottom element*/
     background-color: rgba(3, 3, 3, 0.4);
-    background-image:
-        url('images/mond.png'),
-        url('images/erde.png');
+    background-image:url('images/mond.png'),url('images/erde.png');
     background-repeat: no-repeat;
     background-position: 0;
-    background-size:
-        10vmax,
-        20vmax;
+    background-size:10vmax,20vmax;
     animation: move 14s linear infinite;
     /*best background animation timing*/
 }
@@ -32,7 +28,7 @@
     text-align: center;
     color: aliceblue;
 }
-.skills h1{/* Quelle:w3 Schools glowing text, rest zusammengesucht meist bei w3schools diverse Quellen*/
+.skills h1{/* Source:w3 Schools glowing textand other sites on W3schools.com*/
     text-align: center;
     color: aliceblue;
     animation: glow 1s ease-in-out infinite alternate;
@@ -46,7 +42,7 @@
     text-shadow: 0 0 5px #fff, 0 0 7px azure, 0 0 10px #fff04d, 0 0 15px #fff04d, 0 0 20px #fff04d;
   }
 }
-
+/*Different Sources: W3Schools.com*/
 .python {
     margin-top: 1%;
     margin-left: 30%;
